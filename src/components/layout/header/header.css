@@ -1,0 +1,7 @@
+header {
+  align-items: center;
+  background: green;
+  display: flex;
+  max-height: 75px;
+  width: 100vw;
+}
