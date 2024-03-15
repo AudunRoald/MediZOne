@@ -1,7 +1,8 @@
 header {
   align-items: center;
-  background: green;
+  background: lime;
   display: flex;
-  max-height: 75px;
+  max-height: 150px;
   width: 100vw;
+  padding: 0.5em 1em;
 }
