@@ -1,8 +1,9 @@
 header {
   align-items: center;
-  background: lime;
+  background: var(--primaryTransparent);
   display: flex;
+  justify-content: space-between;
   max-height: 150px;
   width: 100vw;
-  padding: 0.5em 1em;
+  padding: 0.5em;
 }

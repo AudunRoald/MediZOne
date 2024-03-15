@@ -1,12 +1,14 @@
 import MediZOneLogo from "../../../assets/medizone_healthcare_logo.png";
-import NavBar from "../navigation/NavBar";
+import MobileNavgation from "../navigation/MobileNavigation";
+import Navigation from "../navigation/Navigation";
 import "./header.css";
 
 const Header = () => {
   return (
     <header>
       <img src={MediZOneLogo} alt="" className="logo" />
-      <NavBar />
+      <Navigation />
+      <MobileNavgation />
     </header>
   );
 };
