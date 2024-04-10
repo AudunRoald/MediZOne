@@ -30,7 +30,7 @@ const MobileNavgation = (props) => {
       {open ? hamburgerIconClosed : hamburgerIcon}
       {open && (
         <NavigationList
-          isMobile={true}
+          isMobile={false}
           closeMobileNavgation={closeMobileNavgation}
         />
       )}
