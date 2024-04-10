@@ -17,8 +17,8 @@ const NavigationList = () => {
 
   return (
     <ul className="navigationList">
-      <NavigationLink to="/" end icon={faHouse} text="home"></NavigationLink>
-      <NavigationLink to="/Products" icon={faStethoscope} text="products" />
+      <NavigationLink to="/home" end icon={faHouse} text="home" />
+      <NavigationLink to="/products" icon={faStethoscope} text="products" />
     </ul>
   );
 };
