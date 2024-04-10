@@ -6,7 +6,11 @@ const NavigationLink = (props) => {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <NavLink className="navigationLink" onClick={() => setIsActive(!isActive)}>
+    <NavLink
+      to={props.to}
+      className="navigationLink"
+      onClick={() => setIsActive(!isActive)}
+    >
       <FontAwesomeIcon icon={props.icon} className="navLinkIcon" />
       {props.text}
     </NavLink>
