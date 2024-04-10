@@ -18,12 +18,14 @@
   background-color: var(--primaryTransparent);
 }
 
-.navigationLink {
+.navigationLink,
+.navigationItem {
   font-size: 1.5rem;
   color: var(--black);
   text-transform: uppercase;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .navigationLink:hover {
@@ -38,6 +40,19 @@
 
 .active {
   color: var(--secondary);
+}
+
+.navigationDropdownContainer {
+  display: none;
+}
+
+.navigationDropdownContainerActive {
+  display: relative;
+}
+
+.navigationDropdownContainer,
+.navigationDropdownContainerActive {
+  background: var(--primary);
 }
 
 @media (min-width: 781px) {

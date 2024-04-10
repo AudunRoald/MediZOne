@@ -1,51 +1,45 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "./navigation.css";
-import { NavLink } from "react-router-dom";
 import {
   faEnvelope,
   faHouse,
   faInfoCircle,
   faStethoscope,
+  faWrench,
 } from "@fortawesome/free-solid-svg-icons";
 
+import "./navigation.css";
+import NavigationLink from "./components/NavigationLink";
+/* import NavigationDropdown from "./NavigationDropdown";
+import { useState } from "react";
+import NavigationItem from "./components/NavigationItem"; */
+
 const NavigationList = () => {
+  /*  const [navigationDropdown, setNavigationDropdown] = useState(false); */
+
   return (
     <ul className="navigationList">
-      <NavLink
-        className="navigationLink"
-        to="/"
-        onClick={() => props.isMobile && props.closeMobileNavgation()}
-      >
-        {/* <FontAwesomeIcon icon={faHouse} className="navLinkIcon" /> */}
-        home
-      </NavLink>
-      <NavLink
-        className="navigationLink"
-        to="/Products"
-        onClick={() => props.isMobile && props.closeMobileNavgation()}
-      >
-        {/* <FontAwesomeIcon icon={faStethoscope} className="navLinkIcon" /> */}
-        products
-      </NavLink>
-      <NavLink
-        className="navigationLink"
-        to="/About"
-        onClick={() => props.isMobile && props.closeMobileNavgation()}
-      >
-        {/* <FontAwesomeIcon icon={faInfoCircle} className="navLinkIcon" /> */}
-        about us
-      </NavLink>
-      <NavLink
-        className="navigationLink"
-        to="/ContactUs"
-        onClick={() => props.isMobile && props.closeMobileNavgation()}
-      >
-        {/*         <FontAwesomeIcon icon={faEnvelope} className="navLinkIcon" />
-         */}
-        contact us
-      </NavLink>
+      <NavigationLink to="/" end icon={faHouse} text="home"></NavigationLink>
+      <NavigationLink to="/Products" icon={faStethoscope} text="products" />
     </ul>
   );
 };
 
 export default NavigationList;
+
+{
+  /* <ul className="navigationList">
+<NavigationLink to="/" icon={faHouse} text="home" />
+<NavigationLink to="/Products" icon={faStethoscope} text="products" />
+<NavigationItem
+  icon={faWrench}
+  text="services"
+  onClick={() => {
+    !setNavigationDropdown;
+  }}
+>
+  <NavigationDropdown />
+</NavigationItem>
+
+<NavigationLink to="/About" icon={faInfoCircle} text="about" />
+<NavigationLink to="/ContactUs" icon={faEnvelope} text="contact" />
+</ul> */
+}
