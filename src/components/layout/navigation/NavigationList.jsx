@@ -17,8 +17,10 @@ const NavigationList = () => {
 
   return (
     <ul className="navigationList">
-      <NavigationLink to="/home" end icon={faHouse} text="home" />
+      <NavigationLink to="/" end icon={faHouse} text="home" />
       <NavigationLink to="/products" icon={faStethoscope} text="products" />
+      <NavigationLink to="/About" icon={faInfoCircle} text="about" />
+      <NavigationLink to="/ContactUs" icon={faEnvelope} text="contact" />
     </ul>
   );
 };
@@ -27,8 +29,7 @@ export default NavigationList;
 
 {
   /* <ul className="navigationList">
-<NavigationLink to="/" icon={faHouse} text="home" />
-<NavigationLink to="/Products" icon={faStethoscope} text="products" />
+
 <NavigationItem
   icon={faWrench}
   text="services"
@@ -39,7 +40,5 @@ export default NavigationList;
   <NavigationDropdown />
 </NavigationItem>
 
-<NavigationLink to="/About" icon={faInfoCircle} text="about" />
-<NavigationLink to="/ContactUs" icon={faEnvelope} text="contact" />
 </ul> */
 }
