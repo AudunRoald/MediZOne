@@ -8,19 +8,30 @@ import {
 
 import "./navigation.css";
 import NavigationLink from "./components/NavigationLink";
+import ServicesDropdown from "./ServicesDropdown";
+import { useState } from "react";
+import DropdownMenu from "./components/DropdownMenu";
 /* import NavigationDropdown from "./NavigationDropdown";
 import { useState } from "react";
 import NavigationItem from "./components/NavigationItem"; */
 
 const NavigationList = () => {
-  /*  const [navigationDropdown, setNavigationDropdown] = useState(false); */
+  const [open, setOpen] = useState(false);
+
+  const toggleDropdown = () => setOpen(!open);
 
   return (
     <ul className="navigationList">
-      <NavigationLink to="/" end icon={faHouse} text="home" />
+      <NavigationLink to="/" icon={faHouse} text="home" />
       <NavigationLink to="/products" icon={faStethoscope} text="products" />
-      <NavigationLink to="/About" icon={faInfoCircle} text="about" />
-      <NavigationLink to="/ContactUs" icon={faEnvelope} text="contact" />
+      <DropdownMenu
+        icon={faWrench}
+        text="services"
+        onClick={toggleDropdown}
+      ></DropdownMenu>
+      {open && <ServicesDropdown />}
+      <NavigationLink to="/about" icon={faInfoCircle} text="about" />
+      <NavigationLink to="/contactUs" icon={faEnvelope} text="contact" />
     </ul>
   );
 };
