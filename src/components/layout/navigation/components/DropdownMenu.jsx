@@ -1,9 +1,11 @@
 import { faCaretDown, faCaretRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
+import ServicesDropdown from "../ServicesDropdown";
 
 const DropdownMenu = (props) => {
-  const [open, setOpen] = useState(false);
+  const [caret, setCaret] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(true);
 
   const navigationCaretRight = (
     <FontAwesomeIcon icon={faCaretRight} className="navigationLinkIcon" />
@@ -14,12 +16,26 @@ const DropdownMenu = (props) => {
   );
 
   return (
-    <ul className="dropdownMenu" onClick={() => setOpen(!open)}>
+    <li
+      className="dropdownMenu"
+      onClick={() => setDropdownOpen(!dropdownOpen) & setCaret(!caret)}
+      onMouseEnter={() => setCaret(true) & setDropdownOpen(true)}
+      onMouseLeave={() => setCaret(false) & setDropdownOpen(false)}
+    >
       <FontAwesomeIcon icon={props.icon} className="navigationIcon" />
       <a className="navigationText">{props.text}</a>
-      {open ? navigationCaretDown : navigationCaretRight}
-    </ul>
+      {caret ? navigationCaretDown : navigationCaretRight}
+      {dropdownOpen && (
+        <ServicesDropdown
+          onMouseEnter={() => setDropdownOpen(true)}
+          onMouseLeave={() => setCaret(false) & setDropdownOpen(false)}
+        />
+      )}
+    </li>
   );
 };
 
 export default DropdownMenu;
+/* onClick={() => setCaret(!caret)} */
+/* onMouseEnter={() => setCaret(true) & setDropdownOpen(true)}
+onMouseLeave={() => setCaret(false) & setDropdownOpen(false)} */
