@@ -16,9 +16,38 @@
   padding: 0;
   margin: 0;
   background-color: var(--primaryTransparent);
-  /* position: absolute;
+  position: absolute;
   right: 2em;
-  top: 2em; */
+  top: 2em;
+}
+
+.dropdownProfile {
+  position: absolute;
+  top: 4.5rem;
+  right: 4rem;
+  width: 80px;
+  padding: 15px;
+  border-radius: 15px;
+  border: 1px solid gray;
+}
+
+.dropdownContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  top: 1.5em;
+  right: 10.1em;
+  max-width: 500px;
+  max-height: 500px;
+  background-color: var(--secondary);
+  opacity: 1;
+  gap: 0.5rem;
+  padding: 1.5rem 1rem 1.5rem 1rem;
+}
+
+.dropdownLink {
+  color: var(--primary);
 }
 
 .dropdownContainerOpen {
