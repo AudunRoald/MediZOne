@@ -18,13 +18,3 @@ const NavigationLink = (props) => {
 };
 
 export default NavigationLink;
-
-/* <NavLink
-      className={
-        isActive
-          ? "navigationDropdownContainerActive"
-          : "navigationDropdownContainer"
-      } onClick={() => props.isMobile && props.closeMobileNavgation() &&setIsActive(isActive)>
-      <FontAwesomeIcon icon={props.icon} className="navLinkIcon" />
-      {props.text}
-    </NavLink></NavLink> */

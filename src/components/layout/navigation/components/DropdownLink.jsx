@@ -10,6 +10,7 @@ const DropdownLink = (props) => {
       to={props.to}
       className="dropdownLink"
       onClick={() => setIsActive(!isActive)}
+      onMouseEnter={() => setIsActive(true)}
     >
       <FontAwesomeIcon icon={props.icon} className="navigationIcon" />
       {props.text}
