@@ -28,6 +28,18 @@ body {
   padding: 0;
 }
 
-h1 {
-  text-align: center;
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
+
+@media (min-width: 820px) {
+  main {
+    flex-direction: column;
+  }
+}
+
+/* h1 {
+  text-align: center;
+} */
