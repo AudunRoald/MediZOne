@@ -1,11 +1,13 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 import "./css/assets.css";
 import "./css/main.css";
-import Home from "./pages/Home";
+import Home from "./pages/home/Home";
 import Products from "./pages/Products";
 import About from "./pages/About";
 import ContactUs from "./pages/ContactUs";
+import UsedParts from "./pages/UsedParts";
+import Repairs from "./pages/Repairs";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <Route path="/products" element={<Products />} />
         <Route path="/about" element={<About />} />
         <Route path="/contactUs" element={<ContactUs />} />
+        <Route path="/repairs" element={<Repairs />} />
+        <Route path="/usedParts" element={<UsedParts />} />
         {/* <Route path="*" element={<NoPage />} /> */}
       </Routes>
     </>
