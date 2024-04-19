@@ -1,0 +1,44 @@
+.contactInfoOfficeBox {
+  display: flex;
+  align-items: center;
+
+  gap: 2em;
+}
+
+.contactInfoCategory {
+  display: flex;
+  flex-direction: column;
+  /*  background-color: aqua; */
+}
+
+.contactInfoCategoryTitle {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: var(--gray);
+  font-weight: bold;
+}
+
+.contactInfoCategoryText {
+  font-size: 2rem;
+}
+
+.contactInfoCategoryTitle,
+.contactInfoCategoryText {
+  margin: 0;
+}
+
+.contactInfoIcon {
+  font-size: 3rem;
+  color: var(--secondary);
+  background-color: chartreuse;
+}
+
+.contactOffice {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  align-items: center;
+}

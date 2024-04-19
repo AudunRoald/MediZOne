@@ -4,8 +4,8 @@ import "./css/assets.css";
 import "./css/main.css";
 import Home from "./pages/home/Home";
 import Products from "./pages/Products";
-import About from "./pages/About";
-import ContactUs from "./pages/ContactUs";
+import About from "./pages/about/About";
+import ContactUs from "./pages/contactUs/ContactUs";
 import UsedParts from "./pages/UsedParts";
 import Repairs from "./pages/Repairs";
 
