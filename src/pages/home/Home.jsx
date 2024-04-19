@@ -1,8 +1,6 @@
 import Header from "../../components/layout/header/Header";
-import NavigationLink from "../../components/layout/navigation/components/NavigationLink";
 import "./Home.css";
 import HomePageTextBlock_1 from "./components/HomePageTextBlock_1";
-import HomePageTextBlock from "./components/HomePageTextBlock_1";
 import HomePageTextBlock_2 from "./components/HomePageTextBlock_2";
 
 const Home = () => {
