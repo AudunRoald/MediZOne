@@ -6,3 +6,19 @@
   display: flex;
   align-items: center;
 }
+
+.logoTextBlock {
+  max-width: 25%;
+}
+
+.logoUnimed {
+  max-width: 100%;
+}
+
+.image {
+  max-width: 40%;
+}
+
+.headerImage {
+  width: max(10%);
+}

@@ -1,12 +1,9 @@
-.image {
-  max-width: 40%;
-}
-
 .aboutPageTitle {
   display: flex;
   gap: 3em;
   align-items: center;
   justify-content: center;
+  margin-bottom: 5em;
 }
 
 .aboutPageTitle h1 {
@@ -26,8 +23,4 @@
 
 .logoPageTitle {
   max-width: 40%;
-}
-
-.textBlockTitle {
-  text-transform: uppercase;
 }

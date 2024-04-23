@@ -1,13 +1,15 @@
-const HomePageTextBlock_2 = () => {
+import Styles from "../home.module.css";
+
+const TextBlockUnimed = () => {
   return (
-    <div className="textBlock_2">
+    <div className={Styles.textBlockUnimed}>
       <div className="textBlockTitleContainer">
         <img
           src="https://www.unimed.cn/cdn/shop/files/Logo_200x.png?v=1617256307"
           alt="unimed logo"
           className="logoTextBlock"
         />
-        <h1 className="textBlockTitle">Unimed Medical Supplies</h1>
+        <h1 className={Styles.textBlockTitle}>Unimed Medical Supplies</h1>
       </div>
       <div className="textBlock">
         <button
@@ -29,7 +31,7 @@ const HomePageTextBlock_2 = () => {
   );
 };
 
-export default HomePageTextBlock_2;
+export default TextBlockUnimed;
 
 {
   /* <div className="textBlockTitleContainer">
