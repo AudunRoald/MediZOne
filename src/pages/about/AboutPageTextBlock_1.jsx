@@ -1,6 +1,6 @@
 const AboutPageTextBlock_1 = () => {
   return (
-    <div className="textBlock_1">
+    <div className="textBlock">
       <div className="textBlockTitleContainer">
         <h1 className="textBlockTitle">Starten</h1>
       </div>

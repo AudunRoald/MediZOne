@@ -97,10 +97,6 @@
   background-color: var(--primary);
 }
 
-.headerImage {
-  width: max(10%);
-}
-
 .contactPage {
   background-color: var(--secondary);
   padding-bottom: 2em;

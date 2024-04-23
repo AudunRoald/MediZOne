@@ -4,15 +4,15 @@ import {
   faHouse,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
-import ContactInfoOfficeBox from "./CategoryInfoBox";
+import Styles from "../ContactUs.module.css";
 import OfficeTitle from "./OfficeTitle";
 import FlagSaudiArabia from "../../../assets/flag_saudi-arabia.png";
 import CategoryInfoBox from "./CategoryInfoBox";
 
 const OfficeNorway = () => {
   return (
-    <div className="contactOfficeContainer">
-      <div className="officeTitleBox">
+    <div className={Styles.contactOfficeContainer}>
+      <div className={Styles.officeTitleBox}>
         <OfficeTitle
           src={FlagSaudiArabia}
           alt="saudia arabian flag"

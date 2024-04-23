@@ -6,11 +6,12 @@ import {
 import OfficeTitle from "./OfficeTitle";
 import FlagNorway from "../../../assets/flag_norway.png";
 import CategoryInfoBox from "./CategoryInfoBox";
+import Styles from "../ContactUs.module.css";
 
 const OfficeNorway = () => {
   return (
-    <div className="contactOfficeContainer">
-      <div className="officeTitleBox">
+    <div className={Styles.contactOfficeContainer}>
+      <div className={Styles.officeTitleBox}>
         <OfficeTitle src={FlagNorway} alt="norwegian flag" text="norway" />
       </div>
       <br />

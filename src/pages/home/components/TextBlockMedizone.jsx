@@ -1,13 +1,16 @@
 import MediZOneLogo from "../../../assets/medizone_healthcare_logo.png";
+import Styles from "../home.module.css";
 
-const HomePageTextBlock_1 = () => {
+const TextBlockMedizone = () => {
   return (
-    <div className="textBlock_1">
+    <div className={Styles.textBlockMedizone}>
       <div className="textBlockTitleContainer">
         <img src={MediZOneLogo} alt="medizone logo" className="logoTextBlock" />
-        <h1 className="textBlockTitle">Your satisfaction is our motivation</h1>
+        <h1 className={Styles.textBlockTitle}>
+          Your satisfaction is our motivation
+        </h1>
       </div>
-      <div className="textBlock">
+      <div className={Styles.textBlock}>
         <p>
           Vi er eksklusive distributører i Norge for Unimed Medical Supplies, og
           lagerfører alle deres produkter. Vi garanterer kort leveringstid og 12
@@ -27,7 +30,7 @@ const HomePageTextBlock_1 = () => {
   );
 };
 
-export default HomePageTextBlock_1;
+export default TextBlockMedizone;
 
 {
   /* <div className="textBlockTitleContainer">

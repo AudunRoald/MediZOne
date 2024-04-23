@@ -1,8 +1,8 @@
 const AboutPageTextBlock_3 = () => {
   return (
-    <div className="textBlock_1">
+    <div className="textBlock">
       <div className="textBlockTitleContainer">
-        <h1 className="textBlockTitle">Your satisfaction is our motivation</h1>
+        <h1 className="textBlockTitle">Enkelt & raskt</h1>
       </div>
       <p>
         Vi ønsker å gjøre hele prosessen veldig praktisk for deg. Vi har en

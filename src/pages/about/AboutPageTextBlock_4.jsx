@@ -1,6 +1,6 @@
 const AboutPageTextBlock_4 = () => {
   return (
-    <div className="textBlock_1">
+    <div className="textBlock">
       <div className="textBlockTitleContainer">
         <h1 className="textBlockTitle">Reparasjon & garanti</h1>
       </div>

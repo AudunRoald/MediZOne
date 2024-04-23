@@ -1,0 +1,66 @@
+.homePage {
+  background-color: var(--primary);
+}
+
+.homePageTitle {
+  position: absolute;
+  top: 7%;
+  left: 0;
+  right: 0%;
+  text-transform: uppercase;
+  background: linear-gradient(
+    to right,
+    var(--primary),
+    var(--primaryTransparent)
+  );
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 2rem;
+  height: max(30em);
+  width: max(100%);
+  padding: 10rem 3rem 14.3rem 3rem;
+}
+
+.homePageTitle h1 {
+  font-size: 4.5rem;
+  width: max(19ch);
+}
+
+.homePageTitle h2 {
+  font-size: 2rem;
+  width: max(35ch);
+}
+
+.homePageTitle h1,
+.homePageTitle h2 {
+  padding-left: 8rem;
+  margin: 0;
+}
+
+.homePageTitleBlock {
+  background-image: url("../../assets/medical-banner-with-doctor-wearing-face-mask.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: max(100%);
+  height: max(80vh);
+  margin-bottom: 6rem;
+  margin-inline: auto;
+}
+
+.textBlockMedizone,
+.textBlockUnimed {
+  gap: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+  width: max(600px);
+  margin-inline: auto;
+}
+
+.textBlockMedizone h1 {
+  width: max(15ch);
+}

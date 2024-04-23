@@ -1,15 +1,15 @@
 import Header from "../../components/layout/header/Header";
-import "./Home.css";
-import HomePageTextBlock_1 from "./components/HomePageTextBlock_1";
-import HomePageTextBlock_2 from "./components/HomePageTextBlock_2";
+import Styles from "./home.module.css";
+import TextBlockMedizone from "./components/TextBlockMedizone";
+import TextBlockUnimed from "./components/TextBlockUnimed";
 
 const Home = () => {
   return (
     <>
       <Header />
-      <main className="homePage">
-        <div className="homePageTitleBlock">
-          <div className="homePageTitle">
+      <main className={Styles.homePage}>
+        <div className={Styles.homePageTitleBlock}>
+          <div className={Styles.homePageTitle}>
             <h1>Medical equipment & consumables</h1>
             <h2>Your satisfaction is our motivation</h2>
             <button to="/products" className="button buttonHomeTitle">
@@ -18,8 +18,8 @@ const Home = () => {
           </div>
         </div>
         <section className="textBlocks">
-          <HomePageTextBlock_1 />
-          <HomePageTextBlock_2 />
+          <TextBlockMedizone />
+          <TextBlockUnimed />
         </section>
       </main>
     </>
