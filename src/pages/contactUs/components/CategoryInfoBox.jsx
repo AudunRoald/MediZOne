@@ -1,16 +1,17 @@
 import CategoryIcon from "./CategoryIcon";
-import ContactInfoCategory from "./ContactInfoCategory";
+import CategoryContainer from "./CategoryContainer";
 
-const ContactInfoOfficeBox = (props) => {
+const CategoryInfoBox = (props) => {
   return (
-    <div className="contactInfoOfficeBox">
+    <div className="categoryInfoBox">
       <CategoryIcon icon={props.icon} alt={props.alt} />
-      <ContactInfoCategory
+      <CategoryContainer
         categoryTitle={props.categoryTitle}
         categoryText={props.categoryText}
+        categoryTime={props.categoryTime}
       />
     </div>
   );
 };
 
-export default ContactInfoOfficeBox;
+export default CategoryInfoBox;

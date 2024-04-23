@@ -3,15 +3,19 @@ import {
   faHouse,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
-import ContactInfoOfficeBox from "./ContactInfoOfficeBox";
 import OfficeTitle from "./OfficeTitle";
+import FlagNorway from "../../../assets/flag_norway.png";
+import CategoryInfoBox from "./CategoryInfoBox";
 
 const OfficeNorway = () => {
   return (
-    <>
-      <OfficeTitle src="flag" alt="norwegian flag" text="norway" />
-      <div className="contactOfficeInfoContainer">
-        <ContactInfoOfficeBox
+    <div className="contactOfficeContainer">
+      <div className="officeTitleBox">
+        <OfficeTitle src={FlagNorway} alt="norwegian flag" text="norway" />
+      </div>
+      <br />
+      <div>
+        <CategoryInfoBox
           icon={faHouse}
           alt="house icon"
           categoryTitle="addresse"
@@ -19,21 +23,21 @@ const OfficeNorway = () => {
                 Gate 11, 1530 Moss Norway"
         />
 
-        <ContactInfoOfficeBox
+        <CategoryInfoBox
           icon={faPhone}
           alt="phone icon"
           categoryTitle="Telefon"
           categoryText="+47 919 22 655"
         />
 
-        <ContactInfoOfficeBox
+        <CategoryInfoBox
           icon={faEnvelope}
           alt="envelope icon"
           categoryTitle="Email"
           categoryText="info@medizonehealthcare.no"
         />
       </div>
-    </>
+    </div>
   );
 };
 

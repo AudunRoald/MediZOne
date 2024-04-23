@@ -1,45 +1,55 @@
 .homePageTitle {
   position: absolute;
-  top: 6%;
-  left: 10%;
+  top: 7%;
+  left: 0;
+  right: 0%;
   text-transform: uppercase;
-  max-height: 100%;
-  background-color: var(--primaryTransparent);
-  margin: 0;
+  background: linear-gradient(
+    to right,
+    var(--primary),
+    var(--primaryTransparent)
+  );
+
   display: flex;
   flex-direction: column;
+
   gap: 2rem;
-  max-height: 100%;
+  height: max(30em);
+  width: max(100%);
   padding: 10rem 3rem 14.3rem 3rem;
 }
 
 .homePageTitle h1 {
   font-size: 4.5rem;
-  max-width: 19ch;
+  width: max(19ch);
 }
 
 .homePageTitle h2 {
   font-size: 2rem;
-  max-width: 35ch;
+  width: max(35ch);
+}
+
+.homePage {
+  background-color: var(--primary);
 }
 
 .homePageTitle h1,
 .homePageTitle h2 {
-  padding-left: 1rem;
+  padding-left: 8rem;
   margin: 0;
 }
 
 .homePageTitleBlock {
-  background-image: url("../../assets/medical-banner-with-doctor-wearing-face-mask.jpg");
+  background-image: url("../../assets/medical-banner-with-doctor-wearing-face-mask.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 100vw;
-  height: 100vh;
+  width: max(100%);
+  height: max(80vh);
 }
 
 .button {
-  max-width: 30rem;
+  width: max(30rem);
   font-size: 2rem;
   text-transform: uppercase;
   font-family: "Lato";
@@ -47,53 +57,87 @@
   padding: 2rem;
   border: 1px solid var(--primary);
   border-radius: 50px;
-  margin: 7rem auto 0 auto;
   color: var(--primary);
   box-shadow: 6px 6px 15px var(--black);
   text-shadow: 5px 5px 10px var(--black);
 }
 
-.buttonSuccess {
+.buttonVisitUnimed {
+  margin: 0 auto;
+}
+
+.buttonSuccess,
+.buttonHomeTitle,
+.buttonVisitUnimed {
   background-color: var(--success);
+  width: max(30rem);
 }
 
-.textBlock_2 .buttonSuccess {
-  max-width: 50rem;
-  margin: 3rem auto 0 auto;
+.buttonVisitUnimed,
+.buttonDownload {
+  width: max(40rem);
 }
 
-.textBlock_2 .buttonDownload {
+.buttonHomeTitle {
+  width: max(30rem);
+  margin: 3em auto 0 6em;
+}
+
+.textBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.textBlock p {
+  width: max(35ch);
+  letter-spacing: 0.1rem;
+  margin: 0;
+}
+
+.buttonDownload {
   background-color: var(--secondary);
   max-width: 60rem;
   font-size: 1.8rem;
-  margin: 4rem auto 0 auto;
+  margin: 0 auto;
 }
 
 .textBlock_1 {
   gap: 3rem;
-  margin: 5em auto;
   padding-bottom: 5em;
-  border-bottom: 1px solid var(--black);
 }
 
 .textBlock_2 {
-  gap: 1rem;
+  gap: 3rem;
   margin: 5em auto;
 }
 
 .textBlock_1,
 .textBlock_2 {
-  font-size: 1.5rem;
-  max-width: 70ch;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  width: max(600px);
+  margin-inline: auto;
+  margin-top: 5rem;
+}
+
+.textBlocks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  width: max(80%);
+  margin-inline: auto;
+
+  border-bottom: 1px solid var(--black);
 }
 
 .textBlockTitleContainer {
   display: flex;
   align-items: center;
   gap: 3rem;
+  width: max(600px);
+  margin-bottom: 3rem;
 }
 
 .logoTextBlock {
@@ -103,9 +147,3 @@
 .logoUnimed {
   max-width: 100%;
 }
-
-/* .backgroundImage {
-  max-width: 100%;
-  font-style: italic;
-  position: absolute;
-} */

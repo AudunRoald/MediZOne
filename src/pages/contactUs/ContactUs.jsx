@@ -3,18 +3,19 @@ import "./ContactUs.css";
 import OfficeNorway from "./components/OfficeNorway";
 import OfficeGermany from "./components/OfficeGermany";
 import OfficeSaudiaArabia from "./components/OfficeSaudiaArabia";
+import phone from "../../assets/smartphone.jpg";
 
 const ContactUs = () => {
   return (
     <>
       <Header />
-      <main>
-        <section>
-          <h1>CONTACT PAGE</h1>
-          <img src="" alt="" />
+      <main className="contactPage">
+        <section className="pageTitleContainer">
+          <h1 className="pageTitle">our offices</h1>
+          <img src={phone} alt="" className="headerImage" />
         </section>
 
-        <section className="contactOfficeSection">
+        <section className="contactOfficesSection">
           <OfficeNorway />
           <OfficeGermany />
           <OfficeSaudiaArabia />

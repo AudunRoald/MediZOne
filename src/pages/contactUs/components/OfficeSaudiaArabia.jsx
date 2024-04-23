@@ -1,17 +1,27 @@
 import {
+  faClock,
   faEnvelope,
   faHouse,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
-import ContactInfoOfficeBox from "./ContactInfoOfficeBox";
+import ContactInfoOfficeBox from "./CategoryInfoBox";
 import OfficeTitle from "./OfficeTitle";
+import FlagSaudiArabia from "../../../assets/flag_saudi-arabia.png";
+import CategoryInfoBox from "./CategoryInfoBox";
 
 const OfficeNorway = () => {
   return (
-    <>
-      <OfficeTitle src="flag" alt="saudia arabian flag" text="Saudia Arabia" />
-      <div className="contactOfficeInfoContainer">
-        <ContactInfoOfficeBox
+    <div className="contactOfficeContainer">
+      <div className="officeTitleBox">
+        <OfficeTitle
+          src={FlagSaudiArabia}
+          alt="saudia arabian flag"
+          text="Saudia Arabia"
+        />
+      </div>
+      <br />
+      <div>
+        <CategoryInfoBox
           icon={faHouse}
           alt="house icon"
           categoryTitle="addresse"
@@ -22,14 +32,14 @@ const OfficeNorway = () => {
           Saudi Arabia"
         />
 
-        <ContactInfoOfficeBox
+        <CategoryInfoBox
           icon={faPhone}
           alt="phone icon"
           categoryTitle="Telefon"
           categoryText="+966 55 226 0061 / +966 504540194"
         />
 
-        <ContactInfoOfficeBox
+        <CategoryInfoBox
           icon={faEnvelope}
           alt="envelope icon"
           categoryTitle="Email"
@@ -37,9 +47,15 @@ const OfficeNorway = () => {
           "
         />
 
-        <p>opening hours fix this</p>
+        <CategoryInfoBox
+          icon={faClock}
+          alt="envelope icon"
+          categoryTitle="opening hours"
+          categoryText="Mandag - Fredag"
+          categoryTime="08:00 - 17:00"
+        />
       </div>
-    </>
+    </div>
   );
 };
 

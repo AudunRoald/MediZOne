@@ -9,20 +9,22 @@ const HomePageTextBlock_2 = () => {
         />
         <h1 className="textBlockTitle">Unimed Medical Supplies</h1>
       </div>
-      <button
-        to="https://www.unimed.cn/"
-        alt="button to Unimed Medical Supplies homepage"
-        className="button buttonSuccess"
-      >
-        visit unimed medical supplies
-      </button>
-      <button
-        to="https://medizonehealthcare.no/wp-content/uploads/2021/12/1.-Unimed_Product-Catalogue_B1.4_21.07.08p-2.pdf"
-        alt="open unimed product catalog"
-        className="button buttonDownload"
-      >
-        open unimed product catalog
-      </button>
+      <div className="textBlock">
+        <button
+          to="https://www.unimed.cn/"
+          alt="button to Unimed Medical Supplies homepage"
+          className="button buttonVisitUnimed"
+        >
+          visit unimed medical supplies
+        </button>
+        <button
+          to="https://medizonehealthcare.no/wp-content/uploads/2021/12/1.-Unimed_Product-Catalogue_B1.4_21.07.08p-2.pdf"
+          alt="open unimed product catalog"
+          className="button buttonDownload"
+        >
+          open unimed product catalog
+        </button>
+      </div>
     </div>
   );
 };
