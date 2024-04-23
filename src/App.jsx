@@ -3,11 +3,11 @@ import { Route, Routes } from "react-router-dom";
 import "./css/assets.css";
 import "./css/main.css";
 import Home from "./pages/home/Home";
-import Products from "./pages/Products";
+import Products from "./pages/products/Products";
 import About from "./pages/about/About";
 import ContactUs from "./pages/contactUs/ContactUs";
-import UsedParts from "./pages/UsedParts";
-import Repairs from "./pages/Repairs";
+import UsedParts from "./pages/usedParts/UsedParts";
+import Repairs from "./pages/repairs/FlexibleScopeRepair.jsx";
 
 function App() {
   return (

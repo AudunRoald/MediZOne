@@ -11,7 +11,7 @@ const About = () => {
   return (
     <>
       <Header />
-      <main>
+      <main className="aboutPage">
         <section className="aboutPageTitle">
           <img
             src={DoctorHappy}
