@@ -1,26 +1,59 @@
 .aboutPageTitle {
   display: flex;
+  flex-direction: column;
   gap: 3em;
+  position: relative;
   align-items: center;
   justify-content: center;
-  margin-bottom: 5em;
+  margin-bottom: 20em;
+  background-color: var(--secondary);
 }
 
 .aboutPageTitle h1 {
-  font-size: 5rem;
+  font-size: 5.5rem;
   text-transform: uppercase;
+  align-self: flex-end;
   margin: 0;
   letter-spacing: 0.5rem;
 }
 
 .pageTitleAndLogo {
   display: inherit;
+  position: absolute;
+  top: 40em;
+  justify-content: center;
   align-items: center;
+  padding-bottom: 2rem;
   gap: 3rem;
-  flex-direction: column;
-  /* background-color: white; */
+  background-color: var(--primary);
+  border-bottom: 0.3rem solid var(--tertiary);
+  box-shadow: 10px 10px 50px var(--black);
+  height: max(22vh);
+  padding-bottom: 5rem;
 }
 
-.logoPageTitle {
+.logoTitle {
   max-width: 40%;
+}
+
+.textBlockIcon {
+  color: var(--secondary);
+  font-size: 3rem;
+}
+
+.textBlockTitle {
+  color: var(--white);
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.textBlockIconInverted {
+  color: var(--primary);
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.textBlockTitleInverted {
+  color: var(--primary);
+  font-size: 3rem;
 }

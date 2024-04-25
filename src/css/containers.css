@@ -5,6 +5,58 @@
   margin-inline: auto;
 }
 
+.textBlocksRow {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+}
+
+.textBlockAbout,
+.textBlockAboutInverted {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-inline: auto;
+}
+
+.textBlockAbout {
+  background-color: red;
+  color: var(--primary);
+}
+
+.textBlockAboutInverted {
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
+.textBlocksRow p {
+  width: max(40ch);
+  letter-spacing: 0.1rem;
+  margin: 0;
+}
+
+.textBlockAbout p {
+  width: max(60ch);
+  letter-spacing: 0.1rem;
+  margin: 0;
+}
+
+.textBlockAboutColumn {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-inline: auto;
+}
+
+.textBlockInverted {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-inline: auto;
+  background-color: var(--secondary);
+}
+
 .textBlock p {
   width: max(45ch);
   letter-spacing: 0.1rem;
@@ -38,7 +90,8 @@
 }
 
 .textBlocksSection {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   width: max(80%);
   gap: 5rem;
   grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
