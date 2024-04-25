@@ -16,7 +16,7 @@
 }
 
 .image {
-  max-width: 40%;
+  width: max(60%);
 }
 
 .headerImage {
