@@ -6,7 +6,12 @@ const ServicesDropdown = () => {
     <ul
       className={`dropdownContainer ${open ? "dropdownActive" : "dropdownInactive"}`}
     >
-      <DropdownLink to="/repairs" icon={faWrench} text="Repairs" />
+      {/* <DropdownLink to="/repairs" icon={faWrench} text="Repairs" /> */}
+      <DropdownLink
+        to="/flexiblerepairs"
+        icon={faWrench}
+        text="Flexible Repairs"
+      />
       <DropdownLink to="/usedParts" icon={faHand} text="Used parts" />
     </ul>
   );

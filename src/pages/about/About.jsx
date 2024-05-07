@@ -81,7 +81,7 @@ const About = () => {
           />
 
           <TextBlock
-            className="textBlockAbout"
+            className="info_container_large_inverted"
             icon={faScrewdriverWrench}
             iconClass={Styles.textBlockIcon}
             titleClass={Styles.textBlockTitle}

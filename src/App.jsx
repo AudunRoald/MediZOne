@@ -9,7 +9,8 @@ import Products from "./pages/products/Products";
 import About from "./pages/about/About";
 import ContactUs from "./pages/contactUs/ContactUs";
 import UsedParts from "./pages/usedParts/UsedParts";
-import Repairs from "./pages/repairs/FlexibleScopeRepair.jsx";
+/* import Repairs from "./pages/repairs/FlexibleScopeRepair.jsx"; */
+import FlexibleScopeRepair from "./pages/repairs/FlexibleScopeRepair.jsx";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
         <Route path="/products" element={<Products />} />
         <Route path="/about" element={<About />} />
         <Route path="/contactUs" element={<ContactUs />} />
-        <Route path="/repairs" element={<Repairs />} />
+        <Route path="/flexiblerepairs" element={<FlexibleScopeRepair />} />
         <Route path="/usedParts" element={<UsedParts />} />
         {/* <Route path="*" element={<NoPage />} /> */}
       </Routes>
@@ -28,3 +29,7 @@ function App() {
 }
 
 export default App;
+
+{
+  /* <Route path="/repairs" element={<Repairs />} /> */
+}

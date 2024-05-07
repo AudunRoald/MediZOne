@@ -1,8 +1,8 @@
-.homePage {
+/* .homePage {
   background-color: var(--primary);
-}
+} */
 
-.homePageTitle {
+.page_title {
   position: absolute;
   top: 7%;
   left: 0;
@@ -13,45 +13,42 @@
     var(--primary),
     var(--primaryTransparent)
   );
-
   display: flex;
   flex-direction: column;
-
   gap: 2rem;
-  height: max(30em);
+  height: max(80%);
   width: max(100%);
   padding: 10rem 3rem 14.3rem 3rem;
 }
 
-.homePageTitle h1 {
+.page_title h1 {
   font-size: 4.5rem;
   width: max(19ch);
 }
 
-.homePageTitle h2 {
+.page_title h2 {
   font-size: 2rem;
   width: max(35ch);
 }
 
-.homePageTitle h1,
-.homePageTitle h2 {
+.page_title h1,
+.page_title h2 {
   padding-left: 8rem;
   margin: 0;
 }
 
-.homePageTitleBlock {
+.page_title_container {
   background-image: url("../../assets/medical-banner-with-doctor-wearing-face-mask.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   width: max(100%);
   height: max(80vh);
-  margin-bottom: 6rem;
   margin-inline: auto;
+  margin-bottom: 6em;
 }
 
-.textBlockMedizone,
-.textBlockUnimed {
+.text_block_container {
   gap: 3rem;
   display: flex;
   flex-direction: column;
@@ -59,8 +56,4 @@
   font-size: 1.5rem;
   width: max(600px);
   margin-inline: auto;
-}
-
-.textBlockMedizone h1 {
-  width: max(15ch);
 }

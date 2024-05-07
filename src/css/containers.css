@@ -1,4 +1,4 @@
-.textBlock {
+.text_block {
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -8,25 +8,28 @@
 .textBlocksRow {
   display: flex;
   flex-direction: row;
-  gap: 5rem;
+  justify-content: center;
+  margin: 0;
+}
+
+.textBlockIcon {
+  padding-left: 22em;
 }
 
 .textBlockAbout,
 .textBlockAboutInverted {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
-  margin-inline: auto;
 }
 
 .textBlockAbout {
-  background-color: red;
   color: var(--primary);
 }
 
 .textBlockAboutInverted {
   background-color: var(--secondary);
   color: var(--primary);
+  margin: 0;
 }
 
 .textBlocksRow p {
@@ -42,19 +45,24 @@
 }
 
 .textBlockAboutColumn {
-  background-color: red;
+  background-color: var(--primary);
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 1rem;
   margin-inline: auto;
 }
 
 .textBlockInverted {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 1rem;
   margin-inline: auto;
   background-color: var(--secondary);
+}
+
+.textBlockAboutInverted p {
+  width: max(70ch);
+  margin-right: 1rem;
 }
 
 .textBlock p {
@@ -63,28 +71,24 @@
   margin: 0;
 }
 
-.textBlocks {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-  width: max(80%);
-  margin-inline: auto;
-  border-bottom: 1px solid var(--black);
-}
-
-.textBlockTitleContainer {
+/* .textBlockTitleContainer {
   display: flex;
   align-items: center;
-  gap: 3rem;
-  width: max(600px);
-  margin-bottom: 3rem;
+  justify-content: center;
+  gap: 1.5rem;
+  width: max(400px);
+} */
+
+.textBlocksRow .textBlockTitleContainer {
+  padding: 0;
 }
 
-.textBlockTitle {
-  text-transform: uppercase;
+.text_block_title {
+  margin-inline: auto;
 }
 
 .textBlock p,
-.textBlockTitle,
+.text_block_title,
 .textBlockTitleContainer {
   margin-inline: auto;
 }
@@ -94,7 +98,43 @@
   flex-direction: column;
   width: max(80%);
   gap: 5rem;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
   margin-inline: auto;
   border-bottom: 1px solid var(--black);
+}
+
+/* NEW STYLES AND CLASSES BELOW */
+
+.title_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: max(100%);
+}
+
+.text_blocks_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  width: max(80%);
+  margin-inline: auto;
+  padding-bottom: 3em;
+  border-bottom: 1px solid var(--black);
+}
+
+.info_container_large_inverted {
+  display: flex;
+  gap: 1rem;
+  color: var(--black);
+  background-color: var(--primary);
+}
+
+.info_container_large_inverted p {
+  width: max(70ch);
+  margin-right: 1rem;
+}
+
+.key_services_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
 }
