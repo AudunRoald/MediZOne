@@ -10,7 +10,7 @@ import Styles from "../ContactUs.module.css";
 
 const OfficeNorway = () => {
   return (
-    <div className={Styles.contactOfficeContainer}>
+    <div className={Styles.contact_office_container}>
       <div className={Styles.officeTitleBox}>
         <OfficeTitle src={FlagNorway} alt="norwegian flag" text="norway" />
       </div>

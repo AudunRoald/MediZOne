@@ -2,16 +2,16 @@ import Styles from "../home.module.css";
 
 const TextBlockUnimed = () => {
   return (
-    <div className={Styles.textBlockUnimed}>
-      <div className="textBlockTitleContainer">
+    <div className={Styles.text_block_container}>
+      <div className="title_container">
         <img
           src="https://www.unimed.cn/cdn/shop/files/Logo_200x.png?v=1617256307"
           alt="unimed logo"
           className="logoTextBlock"
         />
-        <h1 className={Styles.textBlockTitle}>Unimed Medical Supplies</h1>
+        <h1>Unimed Medical Supplies</h1>
       </div>
-      <div className="textBlock">
+      <div className="text_block">
         <button
           to="https://www.unimed.cn/"
           alt="button to Unimed Medical Supplies homepage"

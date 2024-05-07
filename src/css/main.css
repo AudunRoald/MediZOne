@@ -12,23 +12,28 @@
   --error: rgb(219, 60, 55);
   --black: rgb(0, 0, 0);
   --gray: rgb(155, 155, 155);
+  --gray_light: rgb(245, 245, 245);
 
   font-size: 16px;
 }
 
-html {
-  padding: 0;
+* {
   margin: 0;
-  height: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
   font-family: "Lato", arial;
   background-color: var(--primary);
+  font-size: 16px;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
-  padding: 0;
+  width: min(100%);
+  height: min(100vh);
 }
 
 main {
@@ -36,6 +41,8 @@ main {
   flex-direction: column;
   margin: 0 auto;
   background-color: var(--primary);
+  width: min(100%);
+  height: min(100%);
 }
 
 .pageTitle {
@@ -62,6 +69,10 @@ p {
   font-size: 1.5rem;
   font-family: arial, sans-serif;
   line-height: 1.3;
+}
+
+a {
+  text-decoration: none;
 }
 
 @media (min-width: 820px) {
