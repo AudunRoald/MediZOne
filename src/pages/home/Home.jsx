@@ -9,8 +9,8 @@ const Home = () => {
     <>
       <Header />
       <main>
-        <div className={Styles.page_title_container}>
-          <div className={Styles.page_title}>
+        <div className="hero_container home_hero_container">
+          <div className="home_hero_title">
             <h1>Medical equipment & consumables</h1>
             <h2>Your satisfaction is our motivation</h2>
             <NavLink to="/products" className="button buttonHomeTitle">
@@ -18,7 +18,7 @@ const Home = () => {
             </NavLink>
           </div>
         </div>
-        <section className="text_blocks_container">
+        <section className="home_section_textblocks">
           <TextBlockMedizone />
           <TextBlockUnimed />
         </section>

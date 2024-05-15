@@ -1,5 +1,4 @@
 .button {
-  width: max(30rem);
   font-size: 2rem;
   text-transform: uppercase;
   font-family: "Lato";
@@ -15,12 +14,12 @@
 .buttonHomeTitle {
   width: max(30rem);
   margin-left: 3em;
-  margin-top: 2em;
+  margin-top: 0.3em;
 }
 
 .buttonDownload {
   background-color: var(--secondary);
-  max-width: 60rem;
+  width: max(5ch);
   font-size: 1.8rem;
   margin: 0 auto;
 }

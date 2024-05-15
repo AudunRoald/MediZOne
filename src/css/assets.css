@@ -7,8 +7,16 @@
   align-items: center;
 }
 
-.logoTextBlock {
-  max-width: 25%;
+.textblock_logo_unimed {
+  width: max(60%);
+}
+
+.textblock_logo_medizone {
+  width: max(25%);
+}
+
+.hero_logo_medizone {
+  width: max(35%);
 }
 
 .logoUnimed {

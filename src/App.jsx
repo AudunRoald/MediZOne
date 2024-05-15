@@ -4,6 +4,7 @@ import "./css/assets.css";
 import "./css/buttons.css";
 import "./css/containers.css";
 import "./css/main.css";
+import "./css/serviceslider_circular.css";
 import Home from "./pages/home/Home";
 import Products from "./pages/products/Products";
 import About from "./pages/about/About";
