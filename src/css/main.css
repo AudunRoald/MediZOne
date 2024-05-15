@@ -13,8 +13,6 @@
   --black: rgb(0, 0, 0);
   --gray: rgb(155, 155, 155);
   --gray_light: rgb(245, 245, 245);
-
-  font-size: 16px;
 }
 
 * {
@@ -73,10 +71,4 @@ p {
 
 a {
   text-decoration: none;
-}
-
-@media (min-width: 820px) {
-  main {
-    flex-direction: column;
-  }
 }

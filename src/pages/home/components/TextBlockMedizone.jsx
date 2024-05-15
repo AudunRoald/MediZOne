@@ -3,12 +3,16 @@ import Styles from "../home.module.css";
 
 const TextBlockMedizone = () => {
   return (
-    <div className={Styles.text_block_container}>
-      <div className="title_container">
-        <img src={MediZOneLogo} alt="medizone logo" className="logoTextBlock" />
+    <div className="textblock_container">
+      <div className="textblock_container_title">
+        <img
+          src={MediZOneLogo}
+          alt="medizone logo"
+          className="textblock_logo_medizone"
+        />
         <h1>Your satisfaction is our motivation</h1>
       </div>
-      <div className="text_block">
+      <div className="textblock_container_text">
         <p>
           Vi er eksklusive distributører i Norge for Unimed Medical Supplies, og
           lagerfører alle deres produkter. Vi garanterer kort leveringstid og 12
