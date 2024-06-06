@@ -1,31 +1,27 @@
-import Styles from "../home.module.css";
+import Button from "../../../components/buttons/Button";
 
 const TextBlockUnimed = () => {
   return (
-    <div className="textblock_container">
-      <div className="textblock_container_title">
+    <div className="textblock-container">
+      <div className="textblock-container_title-wrapper">
         <img
           src="https://www.unimed.cn/cdn/shop/files/Logo_200x.png?v=1617256307"
           alt="unimed logo"
-          className="textblock_logo_unimed"
+          className="textblock-logo_unimed"
         />
         <h1>Unimed Medical Supplies</h1>
       </div>
-      <div className="textblock_container_text">
-        <button
+      <div className="textblock-container_text">
+        <Button
+          buttonText="visit unimed medical supplies"
+          buttonClass="button button_call-to-action"
           to="https://www.unimed.cn/"
-          alt="button to Unimed Medical Supplies homepage"
-          className="button buttonVisitUnimed"
-        >
-          visit unimed medical supplies
-        </button>
-        <button
+        />
+        <Button
+          buttonText="open unimed product catalog"
+          buttonClass="button button_call-to-action"
           to="https://medizonehealthcare.no/wp-content/uploads/2021/12/1.-Unimed_Product-Catalogue_B1.4_21.07.08p-2.pdf"
-          alt="open unimed product catalog"
-          className="button buttonDownload"
-        >
-          open unimed product catalog
-        </button>
+        />
       </div>
     </div>
   );

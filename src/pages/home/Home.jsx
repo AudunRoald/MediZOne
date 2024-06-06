@@ -1,24 +1,34 @@
 import Header from "../../components/layout/header/Header";
-import Styles from "./home.module.css";
-import TextBlockMedizone from "./components/TextBlockMedizone";
+import { Link } from "react-router-dom";
 import TextBlockUnimed from "./components/TextBlockUnimed";
-import { NavLink } from "react-router-dom";
+import TextBlockMedizone from "./components/TextBlockMedizone";
+import Button from "../../components/buttons/Button";
+import "./home.css";
 
 const Home = () => {
   return (
     <>
       <Header />
       <main>
-        <div className="hero_container home_hero_container">
-          <div className="home_hero_title">
-            <h1>Medical equipment & consumables</h1>
-            <h2>Your satisfaction is our motivation</h2>
-            <NavLink to="/products" className="button buttonHomeTitle">
-              view our products
-            </NavLink>
+        <section className="hero-wrapper hero-wrapper_home-page">
+          <div className="hero-title_wrapper">
+            <div className="hero-titles_wrapper">
+              <h1 className="hero-titles_main-title">
+                Medical equipment & consumables
+              </h1>
+              <h2 className="hero-titles_second-title">
+                Your satisfaction is our motivation
+              </h2>
+            </div>
+            <Button
+              buttonText="view our products"
+              buttonClass="button button_call-to-action"
+              to="/products"
+            />
           </div>
-        </div>
-        <section className="home_section_textblocks">
+        </section>
+
+        <section className="text-blocks_home-page">
           <TextBlockMedizone />
           <TextBlockUnimed />
         </section>

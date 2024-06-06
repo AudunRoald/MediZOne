@@ -30,15 +30,15 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  width: min(100%);
-  height: min(100vh);
+  width: min(100dvw);
+  height: min(100dvh);
 }
 
 main {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  background-color: var(--primary);
+  /* background-color: var(--primary); */
   width: min(100%);
   height: min(100%);
 }
