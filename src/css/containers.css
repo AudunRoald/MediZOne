@@ -1,279 +1,55 @@
-.textblock_container_text {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  margin-inline: auto;
-  justify-content: center;
-}
-
-.about_textblock_icon,
-.about_textblock_icon__inverted {
-  font-size: 45px;
-}
-
-.textBlockAboutColumn {
-  background-color: var(--primary);
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin-inline: auto;
-}
-
-.textBlockInverted {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin-inline: auto;
-  background-color: var(--secondary);
-}
-
-.textblock_container_text p {
-  width: max(45ch);
-  letter-spacing: 0.1rem;
-  margin: 0;
-}
-
-/* .textBlockTitleContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
-  width: max(400px);
-} */
-
-/* NEW STYLES AND CLASSES BELOW */
-
-.textblock_container_title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 3rem;
+.hero-wrapper {
+  height: max(100%);
+  margin-bottom: 6rem;
   width: max(100%);
 }
 
-.home_section_textblocks {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  width: max(80%);
-  margin-inline: auto;
-  padding-bottom: 3em;
-  border-bottom: 1px solid var(--black);
-}
-
-.about_section_textblocks {
-  display: flex;
-  flex-direction: column;
-  width: max(80%);
-  gap: 5rem;
-  grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
-  margin-inline: auto;
-  border-bottom: 1px solid var(--black);
-  border-top: 1px solid var(--black);
-  padding-block: 10em;
-  margin-bottom: 15em;
-}
-
-.info_container_large_inverted {
-  display: flex;
-  gap: 1rem;
-  color: var(--black);
-  background-color: var(--primary);
-}
-
-.info_container_large_inverted p {
-  width: max(70ch);
-  margin-right: 1rem;
-}
-
-.key_services_container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
-}
-
-.hero_container {
-  background-repeat: no-repeat;
+.hero-wrapper_home-page {
+  background-image: url("../assets/medical-banner-with-doctor-wearing-face-mask.png");
   background-position: center;
   background-size: cover;
-  width: max(100%);
   height: max(80vh);
-  margin-inline: auto;
-}
-
-.home_hero_container {
-  background-image: url("../assets/medical-banner-with-doctor-wearing-face-mask.png");
-  margin-bottom: 6em;
-}
-
-.about_hero_container {
-  display: flex;
-  flex-direction: column;
-  gap: 3em;
   position: relative;
+}
+
+.hero-wrapper_home-page::before {
+  background-color: var(--secondaryTransparent);
+}
+
+.hero-title_wrapper {
   align-items: center;
-  justify-content: center;
-  margin-bottom: 15em;
-  background-color: var(--secondary);
-}
-
-.about_hero_container h1 {
-  font-size: 5.5rem;
-  text-transform: uppercase;
-  align-self: flex-end;
-  letter-spacing: 0.5rem;
-}
-
-.home_hero_title {
-  position: absolute;
-  top: 7%;
-  left: 0;
-  right: 0%;
-  text-transform: uppercase;
-  background: linear-gradient(
-    to right,
-    var(--primary),
-    var(--primaryTransparent)
-  );
+  background-color: aqua;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  height: max(80%);
-  width: max(100%);
-  padding: 10rem 3rem 14.3rem 3rem;
+  height: max(100%);
+  justify-content: space-around;
+  margin-left: 5rem;
+  width: max(50%);
 }
 
-.home_hero_title h1 {
-  font-size: clamp(30px, 8vw, 100px);
-  width: max(19ch);
-}
-
-.home_hero_title h2 {
-  font-size: clamp(15px, 8vw, 50px);
-  width: max(23ch);
-}
-
-.home_hero_title h1,
-.home_hero_title h2 {
-  padding-left: 8rem;
-  margin: 0;
-}
-
-.about_hero_title {
-  display: inherit;
-  position: absolute;
-  top: 40em;
-  justify-content: center;
+.textblock-container {
   align-items: center;
-  padding-bottom: 2rem;
-  gap: 3rem;
-  background-color: var(--primary);
-  border-bottom: 0.3rem solid var(--tertiary);
-  box-shadow: 10px 10px 50px var(--black);
-  height: max(25vh);
-}
-
-.textblock_container {
-  gap: 3rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   font-size: 1.5rem;
-  width: max(700px);
+  gap: 3rem;
   margin-inline: auto;
   padding: 2rem 0;
+  width: max(700px);
 }
 
-.about_textblock_container,
-.about_textblock_container__inverted {
-  flex-direction: row;
+.textblock-container_title-wrapper {
+  align-items: center;
+  display: flex;
+  gap: 3rem;
   justify-content: center;
-  letter-spacing: 0.1rem;
   width: max(100%);
 }
 
-.about_textblock_container__inverted {
-  background-color: var(--secondary);
-}
-
-.about_textblock_title__inverted,
-.about_textblock_text__inverted,
-.about_textblock_icon__inverted {
-  color: var(--primary);
-}
-
-.about_textblock_text,
-.about_textblock_text__inverted {
-  width: clamp(40ch, 50ch, 60ch);
-  line-height: 1.4;
-  letter-spacing: 0.1rem;
-}
-
-.textBlockAboutInverted p {
-  width: max(70ch);
-  margin-right: 1rem;
-}
-
-.textBlockAboutInverted {
+.textblock-container_text {
   display: flex;
-  flex-direction: row;
-}
-
-.textBlockAboutInverted {
-  background-color: var(--secondary);
-  color: var(--primary);
-  margin: 0;
-}
-
-.textblocks_row {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 0;
-}
-
-.about_textblock_title,
-.about_textblock_title__inverted {
-  text-transform: uppercase;
-}
-
-.textblock_title_container {
-  display: flex;
-  gap: 1em;
-}
-
-.about_textblock_text,
-.about_textblock_title,
-.about_textblock_icon {
-  color: var(--secondary);
-}
-
-.servicepoint_info_container {
-  background-color: var(--primary);
-  color: var(--black);
-  width: max(350px);
-  height: max(350px);
-  display: flex;
-  justify-content: center;
-  margin: 0;
   flex-direction: column;
-  border-radius: 50%;
-  border: none;
-  position: relative;
-  background-position: center;
-  background-repeat: no-repeat;
-  box-shadow: 5px 5px 15px var(--black);
-}
-
-.servicepoint_title {
-  display: inherit;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.servicepoint_info_title {
-  font-size: 3rem;
-}
-
-.servicepoint_info_text {
-  font-size: 2rem;
-  text-transform: uppercase;
+  gap: 3rem;
+  justify-content: center;
+  margin-inline: auto;
 }
