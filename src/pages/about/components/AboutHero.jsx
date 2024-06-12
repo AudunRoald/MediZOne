@@ -1,0 +1,23 @@
+import MediZOneLogo from "../../../assets/medizone_healthcare_logo.png";
+
+const AboutHero = () => {
+  return (
+    <section className="hero-wrapper hero-wrapper_about-page">
+      {/* <img
+        src={HeroImage}
+        alt="doctor smiling while watching a laptop"
+        className="image"
+      /> */}
+      <div className="hero-content_wrapper__about-page">
+        <h1 className="hero-title">about</h1>
+        <img
+          src={MediZOneLogo}
+          alt="logoTextBlock"
+          className="hero-logo_medizone"
+        />
+      </div>
+    </section>
+  );
+};
+
+export default AboutHero;

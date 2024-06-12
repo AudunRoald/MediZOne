@@ -6,8 +6,8 @@ import "./header.css";
 const Header = () => {
   return (
     <header>
-      <a href="/" className="logoContainer">
-        <img src={MediZOneLogo} alt="" className="logo" />
+      <a href="/">
+        <img src={MediZOneLogo} alt="" className="logo-header" />
       </a>
       <Navigation />
       <MobileNavgation />

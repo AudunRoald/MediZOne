@@ -1,0 +1,8 @@
+.section-title {
+  font-size: 6rem;
+  color: var(--primary);
+  text-align: center;
+  margin-block: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}

@@ -1,0 +1,73 @@
+.hero-titles_main-title {
+  font-size: clamp(30px, 8vw, 87px);
+  width: max(16ch);
+}
+
+.hero-titles_second-title {
+  font-size: clamp(15px, 8vw, 60px);
+  width: max(14ch);
+}
+
+.hero-titles_wrapper {
+  display: inherit;
+  flex-direction: inherit;
+  gap: 3rem;
+  width: max(90%);
+  background-color: var(--primary);
+}
+
+.hero-wrapper {
+  height: max(100%);
+  margin-bottom: 6rem;
+  width: max(100%);
+  background-color: chartreuse;
+}
+
+.hero-wrapper_home-page {
+  background-image: url("../assets/medical-banner-with-doctor-wearing-face-mask.png");
+  background-position: center;
+  background-size: cover;
+  height: max(80vh);
+  position: relative;
+}
+
+.hero-wrapper_home-page::before {
+  background: linear-gradient(
+    to right,
+    var(--primary),
+    10%,
+    var(--primaryTransparent)
+  );
+}
+
+.hero-wrapper_about-page {
+  background: linear-gradient(to right, var(--secondary), 10%, var(--primary));
+}
+
+.hero-content_wrapper__home-page {
+  align-items: center;
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  height: max(100%);
+  justify-content: space-around;
+  margin-left: 5rem;
+  width: max(50%);
+}
+
+.hero-content_wrapper__about-page {
+  align-items: center;
+  display: flex;
+  height: max(100%);
+  justify-content: space-around;
+}
+
+.hero-title {
+  font-size: 10rem;
+  margin-block: 8rem;
+  text-transform: uppercase;
+}
+
+.hero-logo_medizone {
+  width: max(30%);
+}

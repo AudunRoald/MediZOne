@@ -1,0 +1,98 @@
+.textblock-container {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  gap: 3rem;
+  margin: 3em auto;
+  padding: 4rem 0;
+  width: max(90%);
+}
+
+.textblock-container_about-page {
+  background-color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  gap: 1rem;
+  margin: 2em auto;
+  text-align: left;
+  width: max(90%);
+}
+
+.textblock-container_text {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
+  margin-inline: auto;
+}
+
+.textblock-container_text__about-page {
+  margin: 0;
+  width: max(70ch);
+}
+
+.textblock-container_title {
+  background-color: blanchedalmond;
+  display: flex;
+  font-size: 6rem;
+  flex-direction: row;
+  text-align: center;
+}
+
+.textblock-container_title-wrapper {
+  align-items: center;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.textblock-icon {
+  color: var(--secondary);
+  font-size: 3rem;
+}
+
+.textblock-logo_medizone {
+  width: max(25%);
+}
+
+.textblock-logo_unimed {
+  width: max(60%);
+}
+
+.textblock-text {
+  letter-spacing: 0.1rem;
+  line-height: 1.4;
+  width: clamp(40ch, 50ch, 60ch);
+}
+
+.textblock-title {
+  color: var(--black);
+  display: flex;
+  flex-direction: row;
+  font-size: 3rem;
+}
+
+.textblock-title_about-page {
+  text-transform: uppercase;
+}
+
+.textblocks-container_about-page {
+  align-self: center;
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  margin-block: 6em;
+  width: max(80%);
+}
+
+.text-blocks_home-page {
+  border-bottom: 1px solid var(--black);
+  display: grid;
+  gap: 4rem;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  margin-inline: auto;
+  padding-bottom: 3em;
+  width: max(90%);
+}

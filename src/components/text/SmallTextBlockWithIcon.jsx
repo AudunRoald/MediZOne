@@ -1,9 +1,9 @@
 import TextBlockIcon from "./TextBlockIcon";
 
-const TextBlock = (props) => {
+const SmallTextBlockWithIcon = (props) => {
   return (
-    <div className={props.className}>
-      <div className="textblock_title_container">
+    <div className={props.containerClass}>
+      <div className={props.titleContainerClass}>
         <TextBlockIcon icon={props.icon} iconClassName={props.iconClass} />
         <h1 className={props.titleClass}>{props.title}</h1>
       </div>
@@ -12,4 +12,4 @@ const TextBlock = (props) => {
   );
 };
 
-export default TextBlock;
+export default SmallTextBlockWithIcon;

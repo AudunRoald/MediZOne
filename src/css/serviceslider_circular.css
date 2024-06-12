@@ -1,40 +1,29 @@
-.points_container {
-  min-height: 50vh;
-  padding: 1em 2em 0 2em;
-
-  overflow: hidden;
-  text-align: center;
+.points-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   grid-template-rows: repeat(auto-fit, minmax(500px, 1fr));
+  min-height: 50vh;
+  overflow: hidden;
+  padding: 1em 2em 0 2em;
+  text-align: center;
 }
 
-.section_servicepoints {
+.servicepoints-container {
   background: radial-gradient(var(--primary), var(--secondary));
 }
 
-.section_title {
-  font-size: 6rem;
-  color: var(--primary);
-  text-align: center;
-  margin-block: 1em;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-
-.point_container {
-  display: flex;
-  position: relative;
+.point-container {
   align-items: center;
-  justify-content: center;
-  margin: auto;
-  width: max(500px);
-  margin: 0 auto;
-  gap: 1em;
   color: var(--primary);
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  margin: 0 auto;
+  width: max(500px);
+  position: relative;
 }
 
-.servicepoint_info_container:hover {
+.servicepoint-container:hover {
   border-radius: 10%;
   transition: 700ms ease;
   background-color: var(--success);
@@ -47,7 +36,7 @@
   transition: 700ms ease;
 }
 
-.servicepoint_info_container:not(hover) {
+.servicepoint-container:not(hover) {
   transition: 1000ms ease;
 }
 
@@ -59,39 +48,71 @@
   font-size: 13em;
 }
 
-.servicepoint_overlay {
-  background-color: var(--success);
-  color: var(--primary);
-  position: absolute;
-  border-radius: 10%;
-  overflow: hidden;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 0;
-  height: 0;
+.servicepoint-container {
+  background-color: var(--primary);
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 5px 5px 15px var(--black);
+  color: var(--black);
   display: flex;
   flex-direction: column;
-  text-align: center;
-  margin: auto;
-  transition: 700ms ease;
+  height: max(350px);
+  justify-content: center;
+  margin: 0;
+  position: relative;
+  width: max(350px);
+}
+
+.servicepoint-container_title {
+  display: inherit;
+  flex-direction: column;
   gap: 1rem;
 }
 
-.servicepoint_overlay p {
+.servicepoint-container_text {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.servicepoint-container_title {
+  font-size: 3rem;
+}
+
+.servicepoint-container_overlay {
+  background-color: var(--success);
+  border-radius: 10%;
+  color: var(--primary);
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  height: 0;
+  left: 50%;
+  overflow: hidden;
+  margin: auto;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: 700ms ease;
+  position: absolute;
+  width: 0;
+}
+
+.servicepoint-container_overlay p {
   width: max(20ch);
 }
 
-.servicepoint_info_container:hover .servicepoint_overlay {
-  height: 100%;
-  width: 100%;
+.servicepoint-container:hover .servicepoint-container_overlay {
+  align-items: center;
   border: 2px solid var(--primary);
   display: flex;
-  align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
-.servicepoint_info_container:not(hover) .servicepoint_overlay {
-  display: flex;
+.servicepoint-container:not(hover) .servicepoint-container_overlay {
   align-items: center;
+  display: flex;
   justify-content: center;
 }
