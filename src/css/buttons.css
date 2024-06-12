@@ -24,9 +24,9 @@
 
 .buttonDownload {
   background-color: var(--secondary);
-  width: max(5ch);
   font-size: 1.8rem;
   margin: 0 auto;
+  width: max(5ch);
 }
 
 .buttonVisitUnimed {

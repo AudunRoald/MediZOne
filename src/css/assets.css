@@ -1,22 +1,10 @@
-.logo {
+.logo-header {
   max-width: 12%;
 }
 
 .logoContainer {
   display: flex;
   align-items: center;
-}
-
-.textblock-logo_unimed {
-  width: max(60%);
-}
-
-.textblock-logo_medizone {
-  width: max(25%);
-}
-
-.hero_logo_medizone {
-  width: max(35%);
 }
 
 .logoUnimed {
