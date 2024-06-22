@@ -68,6 +68,11 @@
   text-transform: uppercase;
 }
 
+.hero-title_container__about-page {
+  display: flex;
+  gap: 4em;
+}
+
 .hero-logo_medizone {
   width: max(30%);
 }
