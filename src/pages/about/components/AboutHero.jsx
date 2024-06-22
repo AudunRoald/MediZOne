@@ -9,7 +9,11 @@ const AboutHero = () => {
         className="image"
       /> */}
       <div className="hero-content_wrapper__about-page">
-        <h1 className="hero-title">about</h1>
+        <div className="hero-title_container__about-page">
+          <h1 className="hero-title">om</h1>
+          <h1 className="hero-title">oss</h1>
+          <h1 className="hero-title">i</h1>
+        </div>
         <img
           src={MediZOneLogo}
           alt="logoTextBlock"

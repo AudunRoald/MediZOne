@@ -10,7 +10,6 @@
 }
 
 .textblock-container_about-page {
-  background-color: blueviolet;
   display: flex;
   flex-direction: column;
   font-size: 1.5rem;
@@ -31,6 +30,10 @@
 .textblock-container_text__about-page {
   margin: 0;
   width: max(70ch);
+}
+
+.textblock-container_text-title {
+  text-transform: uppercase;
 }
 
 .textblock-container_title {
@@ -78,12 +81,17 @@
   text-transform: uppercase;
 }
 
+.textblock-title_wrapper {
+  display: inherit;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
 .textblocks-container_about-page {
-  align-self: center;
-  background-color: aqua;
   display: flex;
   flex-direction: column;
-  margin-block: 6em;
+  gap: 2em;
+  margin: 6em auto;
   width: max(80%);
 }
 

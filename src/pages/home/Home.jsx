@@ -1,5 +1,4 @@
 import Header from "../../components/layout/header/Header";
-import "../../css/home.css";
 import HomeHero from "./components/HomeHero";
 import HomeTextBlocks from "./components/HometextBlocks";
 
