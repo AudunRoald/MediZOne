@@ -54,8 +54,8 @@ export default DropdownMenu;
 /* onMouseEnter={() => setCaret(true) & setDropdownOpen(true)}
 onMouseLeave={() => setCaret(false) & setDropdownOpen(false)} */
 
-{
-  /* <li
+/*{
+   <li
       className="navigationLink"
       onClick={() =>
         setCaret(!caret) &
@@ -82,5 +82,5 @@ onMouseLeave={() => setCaret(false) & setDropdownOpen(false)} */
           }
         />
       )}
-    </li> */
-}
+    </li> 
+}*/

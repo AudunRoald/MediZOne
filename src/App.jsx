@@ -5,7 +5,7 @@ import "./css/buttons.css";
 import "./css/hero.css";
 import "./css/main.css";
 import "./css/textblock.css";
-import "./css/serviceslider_circular.css";
+import "./css/keyservices.css";
 import Home from "./pages/home/Home";
 import Products from "./pages/products/Products";
 import About from "./pages/about/About";
