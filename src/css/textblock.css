@@ -34,6 +34,7 @@
 
 .textblock-container_text-title {
   text-transform: uppercase;
+  font-size: 3rem;
 }
 
 .textblock-container_title {
@@ -83,6 +84,7 @@
 
 .textblock-title_wrapper {
   display: inherit;
+  align-items: center;
   gap: 2rem;
   margin-bottom: 1rem;
 }

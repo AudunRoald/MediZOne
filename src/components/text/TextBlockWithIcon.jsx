@@ -5,7 +5,7 @@ const TextBlockWithIcon = (props) => {
     <div className={props.containerClassName}>
       <div className={props.titleContainerClassName}>
         <TextBlockIcon icon={props.icon} iconClassName={props.iconClassName} />
-        <h1 className={props.titleClassName}>{props.title}</h1>
+        <h3 className={props.titleClassName}>{props.title}</h3>
       </div>
       <div className={props.textClassName}>
         {props.text_1__Visable && <p>{props.text_1}</p>}

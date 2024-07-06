@@ -4,6 +4,7 @@ import Servicepointswheel from "../../components/servicepointswheel/Servicepoint
 import AboutHero from "./components/AboutHero";
 import "../../css/about.css";
 import AboutTextBlocks from "./components/AboutTextBlocks";
+import ServiceConcept from "../../components/service_info/service_consept/ServiceConcept";
 
 const About = () => {
   return (
@@ -12,8 +13,8 @@ const About = () => {
       <main>
         <AboutHero />
         <AboutTextBlocks />
-        {/* <Servicepointswheel /> */}
-        {/*  <KeyServices /> */}
+        <ServiceConcept />
+        <KeyServices />
       </main>
     </>
   );

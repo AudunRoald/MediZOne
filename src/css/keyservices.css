@@ -2,8 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-block: 6em;
-  /* background-color: aqua; */
+  margin-bottom: 6em;
 }
 
 .keyServices-container_item {
@@ -21,16 +20,15 @@
 .keyServices-container_items {
   display: flex;
   gap: 10rem;
-
   width: max(90%);
-
   margin-block: 4em;
-  /* background-color: chartreuse; */
 }
 
 .keyServices-container_title {
   font-size: 6rem;
   text-transform: uppercase;
+  text-align: center;
+  margin-block: 3rem;
 }
 
 .keyServices-container_item-icon {

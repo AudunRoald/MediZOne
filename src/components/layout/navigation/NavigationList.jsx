@@ -15,7 +15,7 @@ const NavigationList = () => {
     <ul className="navigationList">
       <NavigationLink to="/" icon={faHouse} text="Home" />
       <NavigationLink to="/products" icon={faStethoscope} text="Products" />
-      <DropdownMenu icon={faWrench} text="Services" />
+      {/* <DropdownMenu icon={faWrench} text="Services" /> */}
 
       <NavigationLink to="/about" icon={faInfoCircle} text="About" />
       <NavigationLink to="/contactUs" icon={faEnvelope} text="Contact" />
