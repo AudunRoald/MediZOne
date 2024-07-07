@@ -1,5 +1,5 @@
-const TextBlockImage = (props) => {
+const Image = (props) => {
   return <img src={props.image} className={props.imageClassName} />;
 };
 
-export default TextBlockImage;
+export default Image;

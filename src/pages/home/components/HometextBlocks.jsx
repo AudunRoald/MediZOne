@@ -1,13 +1,7 @@
-import TextBlockWithImage from "../../../components/text/TextBlockWithImage";
-import MediZOneLogo from "../../../assets/medizone_healthcare_logo.png";
-import { useState } from "react";
+import TextBlockWithImage from "../../../components/text_blocks/TextBlockWithImage";
+import MediZOneLogo from "../../../assets/logos/medizone_healthcare_logo.png";
 
 const HomeTextBlocks = () => {
-  /* const [textOne, setTextOne] = useState(false);
-  const [textTwo, setTextTwo] = useState(false);
-  const [textThree, setTextThree] = useState(false);
-  const [textFour, setTextFour] = useState(false); */
-
   return (
     <section className="text-blocks_home-page">
       <TextBlockWithImage

@@ -1,4 +1,4 @@
-import MediZOneLogo from "../../../assets/medizone_healthcare_logo.png";
+import MediZOneLogo from "../../../assets/logos/medizone_healthcare_logo.png";
 
 const AboutHero = () => {
   return (

@@ -1,0 +1,169 @@
+.office-card_container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 2rem;
+  width: max(80%);
+  margin-inline: auto;
+  background-color: var(--primary);
+  position: relative;
+  box-shadow: 3px 3px 10px var(--black);
+}
+
+.office-card_container::before {
+  top: -2rem;
+  left: -2rem;
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 2rem;
+  position: absolute;
+  z-index: -1;
+}
+
+.office-card_container:nth-child(1)::before,
+.office-card_container:nth-child(2)::before,
+.office-card_container:nth-child(3)::before {
+  width: max(100%);
+  height: max(100%);
+}
+
+.office-card_container:nth-child(1)::before {
+  background-image: url("../assets/flags/flag_of_norway.png");
+}
+
+.office-card_container:nth-child(2)::before {
+  background-image: url("../assets/flags/flag_of_germany.png");
+}
+
+.office-card_container:nth-child(3)::before {
+  background-image: url("../assets/flags/Flag_of_Saudi_Arabia.png");
+}
+
+.office-card_title-container {
+  margin-inline: auto;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding-block: 1rem;
+}
+
+.office-card_title-image {
+  width: max(2.5rem);
+  height: max(2.5rem);
+}
+
+.office-card_title {
+  width: max(250px, 20em);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.office-card_info-category-container {
+  display: flex;
+  align-items: flex-start;
+  /*  font-size: clamp(3rem, 10vw + 1, 50rem); */
+  width: max(500px);
+  margin-inline: 1.5rem;
+  padding-top: 2rem;
+}
+
+.category_icon {
+  padding-top: 0.7rem;
+  font-size: 3rem;
+  color: var(--tertiary);
+}
+
+.category_title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 0;
+  color: var(--gray);
+}
+
+.category_text,
+.category_time {
+  font-size: 2rem;
+  font-weight: bold;
+  width: max(23ch);
+  margin: 0;
+}
+
+.category_container {
+  display: flex;
+  align-items: flex-start;
+  gap: 2em; /* 
+  font-size: clamp(3rem, 10vw + 1, 50rem); */
+  width: max(500px);
+  margin-inline: auto;
+  padding-top: 2rem;
+}
+
+.office-card_info-container {
+  display: inherit;
+  flex-direction: inherit;
+  gap: 1em;
+  margin-inline: auto;
+  padding-inline: 1rem 2rem;
+  padding-block: 2rem;
+}
+
+.contact-us_main {
+  padding-bottom: 2em;
+}
+
+.page-title_container {
+  width: max(100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  margin-bottom: 6em;
+
+  text-transform: uppercase;
+  padding: 2rem 0 2rem 0;
+  background-color: var(--primary);
+}
+
+.page_title {
+  font-size: 6.5rem;
+  color: var(--gray);
+  letter-spacing: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  margin-inline: auto;
+}
+
+.cards-section_title {
+  font-size: 6rem;
+  margin-block: 6rem;
+  text-align: center;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+
+.office-cards_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 0.5rem;
+  margin-inline: 1rem 1rem;
+  position: relative;
+  z-index: 1;
+  isolation: isolate;
+}
+
+.office-cards_section {
+  background-color: var(--secondary);
+  padding-bottom: 6em;
+}

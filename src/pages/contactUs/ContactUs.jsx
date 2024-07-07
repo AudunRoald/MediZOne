@@ -1,24 +1,35 @@
 import Header from "../../components/layout/header/Header";
-import Styles from "./ContactUs.module.css";
-import OfficeNorway from "./components/OfficeNorway";
-import OfficeGermany from "./components/OfficeGermany";
-import OfficeSaudiaArabia from "./components/OfficeSaudiaArabia";
-import phone from "../../assets/smartphone.jpg";
+import OfficeNorway from "./office_cards/OfficeNorway";
+import OfficeGermany from "./office_cards/OfficeGermany";
+import OfficeSaudiaArabia from "./office_cards/OfficeSaudiaArabia";
+import friendly_support_staff from "../../assets/friendly_support_staff.jpg";
 
 const ContactUs = () => {
   return (
     <>
       <Header />
-      <main className={Styles.contactPage}>
-        <section className={Styles.pageTitleContainer}>
-          <h1 className={Styles.pageTitle}>our offices</h1>
-          <img src={phone} alt="" className="headerImage" />
+      <main className="contact-us_main">
+        <section className="page-title_container">
+          <h1 className="page_title">
+            <span>prat</span>
+            <span>med</span>
+            <span>oss</span>
+          </h1>
+
+          <img
+            src={friendly_support_staff}
+            alt="Support friendly staff helping customers"
+            className="contact-us_hero-image"
+          />
         </section>
 
-        <section className={Styles.contactOfficesSection}>
-          <OfficeNorway />
-          <OfficeGermany />
-          <OfficeSaudiaArabia />
+        <section className="office-cards_section">
+          <h2 className="cards-section_title">våre kontorer</h2>
+          <div className="office-cards_container">
+            <OfficeNorway />
+            <OfficeGermany />
+            <OfficeSaudiaArabia />
+          </div>
         </section>
       </main>
     </>

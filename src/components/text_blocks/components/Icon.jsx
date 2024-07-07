@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const TextBlockIcon = (props) => {
+const Icon = (props) => {
   return <FontAwesomeIcon icon={props.icon} className={props.iconClassName} />;
 };
 
-export default TextBlockIcon;
+export default Icon;
