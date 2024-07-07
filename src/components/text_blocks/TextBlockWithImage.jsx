@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Button from "../buttons/Button";
-import TextBlockImage from "./TextBlockImage";
+import Image from "./components/Image";
 
 const TextBlockWithImage = (props) => {
   /* console.log("text_1 :", props.textOneVisable);
@@ -11,10 +11,7 @@ const TextBlockWithImage = (props) => {
   return (
     <div className={props.containerClassName}>
       <div className={props.titleContainerClassName}>
-        <TextBlockImage
-          image={props.image}
-          imageClassName={props.imageClassName}
-        />
+        <Image image={props.image} imageClassName={props.imageClassName} />
         <h1 className={props.titleClassName}>{props.title}</h1>
       </div>
       <div className={props.textClassName}>

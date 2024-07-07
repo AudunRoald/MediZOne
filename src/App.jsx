@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 
 import "./css/assets.css";
 import "./css/buttons.css";
+import "./css/contacUs.css";
 import "./css/hero.css";
 import "./css/main.css";
 import "./css/textblock.css";

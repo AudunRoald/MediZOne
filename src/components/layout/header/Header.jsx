@@ -1,4 +1,4 @@
-import MediZOneLogo from "../../../assets/medizone_healthcare_logo.png";
+import MediZOneLogo from "../../../assets/logos/medizone_healthcare_logo.png";
 import MobileNavgation from "../navigation/MobileNavigation";
 import Navigation from "../navigation/Navigation";
 import "./header.css";
