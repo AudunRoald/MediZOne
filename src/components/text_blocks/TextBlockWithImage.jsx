@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Button from "../buttons/Button";
 import Image from "./components/Image";
 
@@ -11,7 +10,11 @@ const TextBlockWithImage = (props) => {
   return (
     <div className={props.containerClassName}>
       <div className={props.titleContainerClassName}>
-        <Image image={props.image} imageClassName={props.imageClassName} />
+        <Image
+          image={props.image}
+          alt={props.alt}
+          imageClassName={props.imageClassName}
+        />
         <h1 className={props.titleClassName}>{props.title}</h1>
       </div>
       <div className={props.textClassName}>

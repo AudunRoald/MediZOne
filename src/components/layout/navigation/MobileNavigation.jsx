@@ -1,6 +1,6 @@
 import { useState } from "react";
 import NavigationList from "./NavigationList";
-import "./navigation.css";
+import "../../../css/navigation.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 

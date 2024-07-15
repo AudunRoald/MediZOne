@@ -13,31 +13,51 @@
   flex-direction: inherit;
   gap: 3rem;
   width: max(90%);
-  background-color: var(--primary);
+  padding-left: 10em;
+  /* background-color: var(--secondary); */
 }
 
 .hero-wrapper {
   height: max(100%);
   margin-bottom: 6rem;
   width: max(100%);
-  background-color: chartreuse;
+  /* background-color: chartreuse; */
+}
+
+.hero-backgroundImage_home-page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  width: inherit;
 }
 
 .hero-wrapper_home-page {
-  background-image: url("../assets/medical-banner-with-doctor-wearing-face-mask.png");
-  background-position: center;
+  background-image: url("../assets/medical-banner-with-doctor-wearing-face-mask.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
-  height: max(80vh);
+  height: max(90vh);
+  isolation: isolate;
   position: relative;
+  overflow: hidden;
 }
 
-.hero-wrapper_home-page::before {
+.hero-content_wrapper__home-page::after {
+  content: "";
   background: linear-gradient(
     to right,
     var(--primary),
-    10%,
+    70%,
     var(--primaryTransparent)
   );
+  width: max(100%);
+  height: max(100%);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .hero-wrapper_about-page {
@@ -46,13 +66,14 @@
 
 .hero-content_wrapper__home-page {
   align-items: center;
-  background-color: aqua;
   display: flex;
   flex-direction: column;
   height: max(100%);
   justify-content: space-around;
-  margin-left: 5rem;
+  margin-left: 10rem;
   width: max(50%);
+  padding-block: 6em;
+  /* background-color: chartreuse; */
 }
 
 .hero-content_wrapper__about-page {
