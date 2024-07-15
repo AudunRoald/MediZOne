@@ -1,5 +1,6 @@
 import TextBlockWithImage from "../../../components/text_blocks/TextBlockWithImage";
 import MediZOneLogo from "../../../assets/logos/medizone_healthcare_logo.png";
+import UnimedLogo from "../../../assets/Logo_200x.avif";
 
 const HomeTextBlocks = () => {
   return (
@@ -9,6 +10,7 @@ const HomeTextBlocks = () => {
         titleContainerClassName="textblock-container_title-wrapper"
         image={MediZOneLogo}
         imageClassName="textblock-logo_medizone"
+        alt="Medizone company logo"
         title="Your satisfaction is our motivation"
         textClassName="textblock-container_text"
         text_1__Visable={true}
@@ -28,8 +30,9 @@ const HomeTextBlocks = () => {
       <TextBlockWithImage
         containerClassName="textblock-container"
         titleContainerClassName="textblock-container_title-wrapper"
-        image="https://www.unimed.cn/cdn/shop/files/Logo_200x.png?v=1617256307"
+        image={UnimedLogo}
         imageClassName="textblock-logo_unimed"
+        alt="Unimed company logo"
         title="Unimed Medical Supplies"
         textClassName="textblock-container_text"
         buttonClassName="button button_call-to-action"

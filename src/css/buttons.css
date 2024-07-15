@@ -7,7 +7,7 @@
   font-family: "Lato";
   font-size: 2rem;
   font-weight: 700;
-  padding: 2rem;
+  padding: 1em;
   text-align: center;
   text-shadow: 5px 5px 10px var(--black);
   text-transform: uppercase;
@@ -16,10 +16,6 @@
 .button_call-to-action {
   background-color: var(--success);
   color: var(--primary);
-}
-
-.button-wrapper {
-  display: inhert;
 }
 
 .buttonDownload {

@@ -3,11 +3,6 @@ import MediZOneLogo from "../../../assets/logos/medizone_healthcare_logo.png";
 const AboutHero = () => {
   return (
     <section className="hero-wrapper hero-wrapper_about-page">
-      {/* <img
-        src={HeroImage}
-        alt="doctor smiling while watching a laptop"
-        className="image"
-      /> */}
       <div className="hero-content_wrapper__about-page">
         <div className="hero-title_container__about-page">
           <h1 className="hero-title">om</h1>

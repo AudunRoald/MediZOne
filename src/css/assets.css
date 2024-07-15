@@ -1,5 +1,5 @@
 .logo-header {
-  max-width: 12%;
+  width: max(4rem);
 }
 
 .logoContainer {
@@ -8,7 +8,7 @@
 }
 
 .logoUnimed {
-  max-width: 100%;
+  width: 3rem;
 }
 
 .image {

@@ -6,7 +6,7 @@ import {
   faWrench,
 } from "@fortawesome/free-solid-svg-icons";
 
-import "./navigation.css";
+import "../../../css/navigation.css";
 import NavigationLink from "./components/NavigationLink";
 import DropdownMenu from "./components/DropdownMenu";
 

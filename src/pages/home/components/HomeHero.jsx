@@ -1,4 +1,6 @@
 import Button from "../../../components/buttons/Button";
+import "../../../css/hero.css";
+import medicalBanner from "../../../assets/medical-banner-with-doctor-wearing-face-mask.jpg";
 
 const HomeHero = () => {
   return (
@@ -14,10 +16,18 @@ const HomeHero = () => {
         </div>
         <Button
           buttonText="view our products"
-          buttonClass="button button_call-to-action"
+          buttonClassName="button button_call-to-action"
           to="/products"
         />
       </div>
+      {/* <img
+        src={medicalBanner}
+        alt=""
+        className="hero-backgroundImage_home-page"
+        rel="preload"
+        loading="eager"
+        fetchpriority="high"
+      /> */}
     </section>
   );
 };
