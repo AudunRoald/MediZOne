@@ -13,7 +13,7 @@ const About = () => {
       <main>
         <AboutHero />
         <AboutTextBlocks />
-        <ServiceConcept />
+        <ServiceConcept sectionClassName="section-divider_middle serviceConcept_container" />
         <KeyServices />
       </main>
     </>

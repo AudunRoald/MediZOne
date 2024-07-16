@@ -2,10 +2,10 @@ import React from "react";
 import ServiceConceptAccordion from "./components/ServiceConceptAccordion";
 import "../../../css/accordion.css";
 
-const ServiceConcept = () => {
+const ServiceConcept = (props) => {
   return (
-    <section className="serviceConcept_container">
-      <h2 className="serviceConcept_container-title">Service Concept</h2>
+    <section className={props.sectionClassName}>
+      <h2 className="serviceConcept_container-title">Reparerings prosess</h2>
       <ServiceConceptAccordion />
     </section>
   );

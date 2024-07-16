@@ -42,9 +42,20 @@
   cursor: pointer;
 }
 
-.accordion-panel_container:focus-within {
-  outline: 5px solid var(--primary);
-  outline-offset: 3px;
+.accordion-panel_container:has([aria-expanded="false"]) .accordion-image {
+  display: none;
+}
+
+.accordion-panel_container:has([aria-expanded="false"]) {
+  background: linear-gradient(
+    to bottom,
+    var(--secondary),
+    30%,
+    var(--secondaryTransparent) 50%,
+    var(--primaryTransparent),
+    70%,
+    var(--primary)
+  );
 }
 
 .accordion-panel_container:has([aria-expanded="true"]) {
@@ -113,12 +124,81 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 6em;
-  background-color: var(--secondary);
+
+  /* background-color: var(--secondary); */
   container: ServiceConcept-container / inline-size;
 }
 
+.section-divider_left::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -67%;
+  width: max(100%);
+  height: max(100%);
+  z-index: -1;
+  border-radius: 100vw;
+  background: linear-gradient(
+    to bottom,
+    var(--secondary),
+    5%,
+    var(--primary),
+    30%,
+    var(--primaryTransparent)
+  );
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.section-divider_right::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -67%;
+  width: max(100%);
+  height: max(100%);
+  z-index: -1;
+  border-radius: 100vw;
+  background: linear-gradient(
+    to bottom,
+    var(--secondary),
+    5%,
+    var(--primary),
+    30%,
+    var(--primaryTransparent)
+  );
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.section-divider_middle::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: max(60%);
+  height: max(100%);
+  z-index: -1;
+  border-radius: 100vw;
+  background: linear-gradient(
+    to bottom,
+    var(--secondary),
+    7%,
+    var(--primary),
+    30%,
+    var(--primaryTransparent)
+  );
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .serviceConcept_container-title {
-  font-size: 6rem;
+  font-size: 3rem;
   text-transform: uppercase;
   text-align: center;
   margin-block: 3rem;
