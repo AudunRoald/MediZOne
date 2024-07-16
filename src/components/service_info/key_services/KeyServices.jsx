@@ -13,7 +13,7 @@ import KeyService from "./components/KeyService";
 const Key_services = () => {
   return (
     <section className="keyServices-container">
-      <h2 className="keyServices-container_title">key services</h2>
+      <h2 className="keyServices-container_title">Nøkkeltjenester</h2>
       <div>
         <div className="keyServices-container_items">
           <KeyService
