@@ -1,11 +1,11 @@
 .hero-titles_main-title {
-  font-size: clamp(30px, 8vw, 87px);
-  width: max(16ch);
+  font-size: clamp(30px, 8vw, 70px);
+  width: max(27ch);
 }
 
 .hero-titles_second-title {
-  font-size: clamp(15px, 8vw, 60px);
-  width: max(14ch);
+  font-size: clamp(15px, 8vw, 50px);
+  width: max(40ch);
 }
 
 .hero-titles_wrapper {
@@ -14,7 +14,26 @@
   gap: 3rem;
   width: max(90%);
   padding-left: 10em;
+  margin-inline: auto;
+  padding-top: 8rem;
   /* background-color: var(--secondary); */
+}
+
+.hero-titles_wrapper::after {
+  content: "";
+  background: linear-gradient(
+    to bottom,
+    var(--primary),
+    80%,
+    var(--primaryTransparent)
+  );
+  width: max(100%);
+  height: max(100%);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .hero-wrapper {
@@ -29,28 +48,25 @@
   top: 0;
   left: 0;
   z-index: -1;
-
   width: inherit;
 }
 
 .hero-wrapper_home-page {
-  background-image: url("../assets/medical-banner-with-doctor-wearing-face-mask.jpg");
+  background-image: url("../assets/repairing_electrical_equipment.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: max(90vh);
+  height: max(92vh);
+  width: max(100%);
   isolation: isolate;
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 
 .hero-content_wrapper__home-page::after {
   content: "";
-  background: linear-gradient(
-    to right,
-    var(--primary),
-    70%,
-    var(--primaryTransparent)
-  );
+  background: linear-gradient(to top, var(--primary), 10%, transparent);
   width: max(100%);
   height: max(100%);
   display: block;
@@ -68,12 +84,10 @@
   align-items: center;
   display: flex;
   flex-direction: column;
+  margin: auto;
   height: max(100%);
-  justify-content: space-around;
-  margin-left: 10rem;
-  width: max(50%);
-  padding-block: 6em;
-  /* background-color: chartreuse; */
+  width: max(90vw); /* 
+  background-color: chartreuse; */
 }
 
 .hero-content_wrapper__about-page {

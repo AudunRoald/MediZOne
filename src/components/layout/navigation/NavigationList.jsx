@@ -14,9 +14,12 @@ const NavigationList = () => {
   return (
     <ul className="navigationList">
       <NavigationLink to="/" icon={faHouse} text="Home" />
-      <NavigationLink to="/products" icon={faStethoscope} text="Products" />
-      {/* <DropdownMenu icon={faWrench} text="Services" /> */}
-
+      <NavigationLink to="/repairs" icon={faWrench} text="Equipment Repairs" />
+      <NavigationLink
+        to="/wholesale"
+        icon={faStethoscope}
+        text="Medical supplies"
+      />
       <NavigationLink to="/about" icon={faInfoCircle} text="About" />
       <NavigationLink to="/contactUs" icon={faEnvelope} text="Contact" />
     </ul>

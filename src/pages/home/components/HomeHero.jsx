@@ -1,6 +1,6 @@
 import Button from "../../../components/buttons/Button";
 import "../../../css/hero.css";
-import medicalBanner from "../../../assets/medical-banner-with-doctor-wearing-face-mask.jpg";
+import repairing_electrical_equipment from "../../../assets/repairing_electrical_equipment.jpg";
 
 const HomeHero = () => {
   return (
@@ -8,26 +8,18 @@ const HomeHero = () => {
       <div className="hero-content_wrapper__home-page">
         <div className="hero-titles_wrapper">
           <h1 className="hero-titles_main-title">
-            Medical equipment & consumables
+            Expert Medical Equipment Repairs & Wholesale Medical Supplies
           </h1>
           <h2 className="hero-titles_second-title">
-            Your satisfaction is our motivation
+            Trusted Solutions for Healthcare Providers
           </h2>
+          <Button
+            buttonText="Schedule Your Repair Now!"
+            buttonClassName="button button_call-to-action"
+            to="/products"
+          />
         </div>
-        <Button
-          buttonText="view our products"
-          buttonClassName="button button_call-to-action"
-          to="/products"
-        />
       </div>
-      {/* <img
-        src={medicalBanner}
-        alt=""
-        className="hero-backgroundImage_home-page"
-        rel="preload"
-        loading="eager"
-        fetchpriority="high"
-      /> */}
     </section>
   );
 };

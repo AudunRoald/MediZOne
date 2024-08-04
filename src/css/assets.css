@@ -18,3 +18,7 @@
 .contact-us_hero-image {
   width: max(60%);
 }
+
+.home-hero_image {
+  height: max(100%);
+}
