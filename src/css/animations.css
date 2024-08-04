@@ -38,3 +38,59 @@
   animation-timeline: vire();
   animation-range: entry 0 cover 40%;
 }
+
+/* AUTO ROTATE ELEMENT  */
+
+.autoRotateElement {
+  animation: autoRotateAnimation;
+  animation-timeline: view();
+}
+
+@keyframes autoRotateElement {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* AUTO SHOW ELEMENT  */
+
+.autoShowElement {
+  animation: autoShowAnimation both;
+  animation-timeline: view(70% 5%);
+}
+
+@keyframes autoShowElement {
+  from {
+    opacity: 0;
+    transform: translateY(200px) scale(0.3);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* AUTO BLUR ELEMENT  */
+
+.autoBlurElement {
+  animation: autoBlurAnimation both;
+  animation-timeline: view();
+}
+
+@keyframes autoBlurElement {
+  0% {
+    filter: blur(40px);
+  }
+  45%,
+  50% {
+    filter: blur(0px);
+  }
+  100% {
+    filter: blur(40px);
+  }
+}
