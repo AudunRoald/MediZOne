@@ -18,7 +18,7 @@ const NavigationList = () => {
       <NavigationLink
         to="/wholesale"
         icon={faStethoscope}
-        text="Medical supplies"
+        text="Medical Supplies"
       />
       <NavigationLink to="/about" icon={faInfoCircle} text="About" />
       <NavigationLink to="/contactUs" icon={faEnvelope} text="Contact" />
