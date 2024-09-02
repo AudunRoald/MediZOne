@@ -1,11 +1,23 @@
 .hero-titles_main-title {
-  font-size: clamp(30px, 8vw, 70px);
+  font-size: clamp(1rem, 8vw, 4.5rem);
   width: max(27ch);
+  /* background-color: blueviolet; */
+  grid-area: mainTitle;
+  line-height: 1.3em;
+  margin-left: 6rem;
+  color: var(--primary);
+  margin-block: auto;
 }
 
 .hero-titles_second-title {
-  font-size: clamp(15px, 8vw, 50px);
-  width: max(40ch);
+  font-size: clamp(1rem, 8vw, 3rem);
+  width: max(33ch);
+  /* background-color: pink; */
+  grid-area: secondTitle;
+  font-style: italic;
+  color: var(--gray_dark);
+  margin-left: 6rem;
+  margin-block: auto;
 }
 
 .hero-titles_wrapper {
@@ -16,17 +28,18 @@
   padding-left: 10em;
   margin-inline: auto;
   padding-top: 8rem;
+
   /* background-color: var(--secondary); */
 }
 
 .hero-titles_wrapper::after {
   content: "";
-  background: linear-gradient(
+  /* background: linear-gradient(
     to bottom,
     var(--primary),
     80%,
     var(--primaryTransparent)
-  );
+  ); */
   width: max(100%);
   height: max(100%);
   display: block;
@@ -43,25 +56,29 @@
   /* background-color: chartreuse; */
 }
 
-.hero-backgroundImage_home-page {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: inherit;
+.home-page_hero_image {
+  grid-area: homeHeroImage;
+  height: max(100%);
+  transform: scaleX(-1);
+  justify-self: end;
+  border-radius: 1rem 0 0 1rem;
 }
 
 .hero-wrapper_home-page {
-  background-image: url("../assets/repairing_electrical_equipment.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    ".                    homeHeroImage"
+    "mainTitle            homeHeroImage"
+    "secondTitle          homeHeroImage"
+    "cta    homeHeroImage"
+    ".                    homeHeroImage";
   height: max(92vh);
-  width: max(100%);
-  isolation: isolate;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
+  width: 100%;
+  display: grid;
+  background-color: var(--secondary);
+  border: 0.4rem solid var(--primary);
+  border-radius: 1.3rem;
 }
 
 .hero-content_wrapper__home-page::after {
@@ -82,7 +99,7 @@
 
 .hero-content_wrapper__home-page {
   align-items: center;
-  display: flex;
+
   flex-direction: column;
   margin: auto;
   height: max(100%);

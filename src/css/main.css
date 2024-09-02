@@ -6,6 +6,7 @@
   --primaryTransparent: rgba(255, 255, 255, 0.1);
   --primaryTransparentPanelTitle: rgba(255, 255, 255, 0.7);
   /* --primaryTransparentNav: rgba(255, 255, 255, 0.3); */
+  --gray_dark: rgb(70, 70, 70);
   --secondary: rgb(35, 166, 217);
   --secondaryTransparent: rgb(35, 166, 217, 0.2);
   --tertiary: rgb(35, 140, 209);
@@ -14,6 +15,7 @@
   --black: rgb(0, 0, 0);
   --gray: rgb(155, 155, 155);
   --gray_light: rgb(245, 245, 245);
+  --transparent: rgba(255, 255, 255, 1);
 }
 
 * {
@@ -29,7 +31,6 @@
 
 html {
   font-family: "Lato", arial;
-  background-color: var(--primary);
   font-size: 16px;
   /* scroll-behavior: smooth; */
 }
@@ -37,6 +38,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
+  padding-top: min(3.8rem);
 }
 
 main {
@@ -50,9 +52,7 @@ main {
 }
 
 .main_home {
-  position: relative;
-  z-index: 1;
-  isolation: isolate;
+  /*  background-color: var(--secondary); */
 }
 
 .pageTitle {

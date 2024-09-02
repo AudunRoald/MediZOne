@@ -5,6 +5,7 @@ import "./css/buttons.css";
 import "./css/contacUs.css";
 import "./css/hero.css";
 import "./css/main.css";
+import "./css/repairs.css";
 import "./css/textblock.css";
 import "./css/keyservices.css";
 import Home from "./pages/home/Home";

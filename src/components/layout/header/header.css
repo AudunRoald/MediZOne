@@ -1,9 +1,13 @@
 header {
   align-items: center;
-  background: var(--primaryTransparent);
+  background: var(--primary);
   display: flex;
   justify-content: space-between;
   height: max(60px);
   width: max(100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
   padding-inline: 2em;
 }
