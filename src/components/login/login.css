@@ -1,0 +1,25 @@
+input:invalid:not(placeholder-shown) {
+  border-color: red;
+  background-image: url(checked_red.png);
+}
+
+input:valid:not(placeholder-shown) {
+  border-color: green;
+  background-image: url(checked_red.png);
+}
+
+input:invalid:not(placeholder-shown),
+input:valid:not(placeholder-shown) {
+  background-position: calc(100% - 1rem);
+  background-repeat: no-repeat;
+  background-size: 1.5rem;
+}
+
+input:invalid:not(placeholder-shown) + p {
+  color: red;
+}
+
+input:invalid ~ button[type="submit"] {
+  opacity: 0.6;
+  pointer-events: none;
+}

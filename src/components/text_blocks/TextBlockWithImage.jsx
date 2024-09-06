@@ -9,36 +9,43 @@ const TextBlockWithImage = (props) => {
 
   return (
     <div className={props.containerClassName}>
-      <div className={props.titleContainerClassName}>
-        <Image
-          image={props.image}
-          alt={props.alt}
-          imageClassName={props.imageClassName}
+      <Image
+        image={props.image}
+        alt={props.alt}
+        imageClassName={props.imageClassName}
+      />
+      <h1 className={props.titleClassName}>{props.title}</h1>
+
+      {props.text_1__Visable && (
+        <p className={props.text1ClassName}>{props.text_1}</p>
+      )}
+      {props.text_2__Visable && (
+        <p className={props.text2ClassName}>{props.text_2}</p>
+      )}
+      {props.text_3__Visable && (
+        <p className={props.text3ClassName}>{props.text_3}</p>
+      )}
+      {props.text_4__Visable && (
+        <p className={props.text4ClassName}>{props.text_4}</p>
+      )}
+
+      {props.button_1__Visable && (
+        <Button
+          to_1={props.to}
+          buttonClassName={props.buttonClassName}
+          buttonText={props.buttonText_1}
+          buttonGridArea={props.button1GridArea}
         />
-        <h1 className={props.titleClassName}>{props.title}</h1>
-      </div>
-      <div className={props.textClassName}>
-        {props.text_1__Visable && <p>{props.text_1}</p>}
-        {props.text_2__Visable && <p>{props.text_2}</p>}
-        {props.text_3__Visable && <p>{props.text_3}</p>}
-        {props.text_4__Visable && <p>{props.text_4}</p>}
+      )}
 
-        {props.button_1__Visable && (
-          <Button
-            to_1={props.to}
-            buttonClassName={props.buttonClassName}
-            buttonText={props.buttonText_1}
-          />
-        )}
-
-        {props.button_2__Visable && (
-          <Button
-            to_1={props.to}
-            buttonClassName={props.buttonClassName}
-            buttonText={props.buttonText_2}
-          />
-        )}
-      </div>
+      {props.button_2__Visable && (
+        <Button
+          to_1={props.to}
+          buttonClassName={props.buttonClassName}
+          buttonText={props.buttonText_2}
+          buttonGridArea={props.button2GridArea}
+        />
+      )}
     </div>
   );
 };

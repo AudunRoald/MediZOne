@@ -59,9 +59,11 @@
 .home-page_hero_image {
   grid-area: homeHeroImage;
   height: max(100%);
-  transform: scaleX(-1);
+  width: max(100%);
+  object-fit: contain;
   justify-self: end;
-  border-radius: 1rem 0 0 1rem;
+  margin-inline: auto;
+  transform: scaleX(-1);
 }
 
 .hero-wrapper_home-page {
@@ -71,14 +73,13 @@
     ".                    homeHeroImage"
     "mainTitle            homeHeroImage"
     "secondTitle          homeHeroImage"
-    "cta    homeHeroImage"
+    "ctaButton            homeHeroImage"
     ".                    homeHeroImage";
+  gap: 1.5rem;
   height: max(92vh);
-  width: 100%;
+  width: max(100%);
   display: grid;
-  background-color: var(--secondary);
-  border: 0.4rem solid var(--primary);
-  border-radius: 1.3rem;
+  background: linear-gradient(to bottom, var(--secondary), 80%, var(--primary));
 }
 
 .hero-content_wrapper__home-page::after {

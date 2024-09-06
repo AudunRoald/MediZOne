@@ -20,7 +20,7 @@
 }
 
 .home-page_call-to-action {
-  grid-area: cta;
+  grid-area: ctaButton;
   margin: auto;
 }
 
