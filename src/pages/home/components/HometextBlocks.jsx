@@ -6,7 +6,57 @@ const HomeTextBlocks = () => {
   return (
     <section className="text-blocks_home-page">
       <TextBlockWithImage
-        containerClassName="textblock-container"
+        containerClassName="text-block_container__medizone"
+        titleClassName="textblock-container_text-title__medizone"
+        image={MediZOneLogo}
+        imageClassName="textblock-logo_medizone"
+        alt="Medizone company logo"
+        title="Your satisfaction is our motivation"
+        text1ClassName="textblock-container_text1__medizone"
+        text_1__Visable={true}
+        text_1="Vi er eksklusive distributører i Norge for Unimed Medical Supplies, og
+          lagerfører alle deres produkter. Vi garanterer kort leveringstid og 12
+          måneder garanti på alle Unimed sine produkter."
+        text2ClassName="textblock-container_text2__medizone"
+        text_2__Visable={true}
+        text_2="Unimed Medical Supplies Inc. er en ledende produsent av medisinsk
+          utstyr som spesialiserer seg på forsyninger og tilbehør til
+          pasientovervåking. I mer enn 20 år har Unimed levert
+          kvalitetsprodukter knyttet til EKG-kabler, SpO2-sensor, Temp. sonde,
+          NIBP-mansjett, fostersonde osv., Med mer enn 20 000+ produkter, er
+          Unimed en industriell benchmark-bedrift. Alle produkter fra unimed er
+          CE og FDA gokjent."
+      />
+
+      <TextBlockWithImage
+        containerClassName="text-block_container__unimed"
+        titleClassName="textblock-container_text-title__unimed"
+        image={UnimedLogo}
+        imageClassName="textblock-logo_unimed"
+        alt="Unimed company logo"
+        title="Unimed Medical Supplies"
+        textClassName="textblock-container_text"
+        buttonClassName="button button_call-to-action"
+        button1GridArea="button_visit-unimed"
+        button2GridArea="button_download-unimed-catalog"
+        button_1__Visable={true}
+        buttonText_1="visit unimed medical supplies"
+        to_1="https://www.unimed.cn/"
+        button_2__Visable={true}
+        buttonText_2="open unimed product catalog"
+        to_2="https://medizonehealthcare.no/wp-content/uploads/2021/12/1.-Unimed_Product-Catalogue_B1.4_21.07.08p-2.pdf"
+      />
+    </section>
+  );
+};
+
+export default HomeTextBlocks;
+
+/* const HomeTextBlocks = () => {
+  return (
+    <section className="text-blocks_home-page">
+      <TextBlockWithImage
+        containerClassName="text-block_container__medizone"
         titleContainerClassName="textblock-container_title-wrapper"
         image={MediZOneLogo}
         imageClassName="textblock-logo_medizone"
@@ -28,7 +78,7 @@ const HomeTextBlocks = () => {
       />
 
       <TextBlockWithImage
-        containerClassName="textblock-container"
+        containerClassName="text-block_container__unimed"
         titleContainerClassName="textblock-container_title-wrapper"
         image={UnimedLogo}
         imageClassName="textblock-logo_unimed"
@@ -45,6 +95,4 @@ const HomeTextBlocks = () => {
       />
     </section>
   );
-};
-
-export default HomeTextBlocks;
+}; */

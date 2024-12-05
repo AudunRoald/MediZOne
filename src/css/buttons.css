@@ -16,6 +16,12 @@
 .button_call-to-action {
   background-color: var(--success);
   color: var(--primary);
+  letter-spacing: 0.2rem;
+}
+
+.home-page_call-to-action {
+  grid-area: ctaButton;
+  margin: auto;
 }
 
 .buttonDownload {

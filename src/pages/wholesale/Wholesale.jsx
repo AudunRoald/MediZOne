@@ -1,12 +1,12 @@
 import Header from "../../components/layout/header/Header";
 
-const Products = () => {
+const Wholesale = () => {
   return (
     <>
       <Header />
-      <h1>PRODUCTS PAGE</h1>
+      <h1>Wholesales PAGE</h1>
     </>
   );
 };
 
-export default Products;
+export default Wholesale;

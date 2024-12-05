@@ -1,12 +1,29 @@
-.textblock-container {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: column;
+.text-block_container__medizone,
+.text-block_container__unimed {
+  display: grid;
   font-size: 1.5rem;
-  gap: 3rem;
-  margin: 3em auto;
-  padding: 4rem 0;
   width: max(90%);
+}
+
+.text-block_container__medizone {
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1.5rem;
+
+  grid-template-areas:
+    "medizone_logo textBlock_title__medizone"
+    "medizone_text1 medizone_text1"
+    "medizone_text2 medizone_text2";
+}
+
+.text-block_container__unimed {
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1.5rem;
+  grid-template-areas:
+    "unimed_logo textBlock_title__unimed"
+    "unimed_button1 unimed_button1"
+    "unimed_button2 unimed_button2";
 }
 
 .textblock-container_about-page {
@@ -27,6 +44,24 @@
   margin-inline: auto;
 }
 
+.textblock-container_text1__medizone {
+  grid-area: medizone_text1;
+}
+
+.textblock-container_text2__medizone {
+  grid-area: medizone_text2;
+}
+
+.button_visit-unimed {
+  grid-area: unimed_button1;
+  margin: auto;
+}
+
+.button_download-unimed-catalog {
+  grid-area: unimed_button2;
+  margin: auto;
+}
+
 .textblock-container_text__about-page {
   margin: 0;
   width: max(70ch);
@@ -35,6 +70,20 @@
 .textblock-container_text-title {
   text-transform: uppercase;
   font-size: 3rem;
+}
+
+.textblock-container_text-title__medizone {
+  grid-area: textBlock_title__medizone;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  margin: auto;
+}
+
+.textblock-container_text-title__unimed {
+  grid-area: textBlock_title__unimed;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  margin: auto;
 }
 
 .textblock-container_title {
@@ -58,11 +107,15 @@
 }
 
 .textblock-logo_medizone {
-  width: max(25%);
+  width: max(100%);
+  margin: auto;
+  grid-area: medizone_logo;
 }
 
 .textblock-logo_unimed {
-  width: max(60%);
+  margin: auto;
+  grid-area: unimed_logo;
+  width: max(100%);
 }
 
 .textblock-text {
@@ -98,9 +151,8 @@
 }
 
 .text-blocks_home-page {
-  border-bottom: 1px solid var(--black);
   display: grid;
-  gap: 4rem;
+  gap: 6rem;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   margin-inline: auto;
   padding-bottom: 3em;

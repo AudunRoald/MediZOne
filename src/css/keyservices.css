@@ -5,6 +5,13 @@
   margin-bottom: 6em;
 }
 
+.key-services_container__home-page {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-block: 2em;
+  margin-inline: 5em;
+}
+
 .keyServices-container_item {
   width: max(16em);
   display: flex;
@@ -37,6 +44,15 @@
   color: var(--secondary);
 }
 
+.keyServices-container_item-icon__home-page {
+  font-size: 4rem;
+  color: var(--secondary);
+}
+
 .keyServices-container_item-text {
   font-size: 1.2rem;
+}
+
+.keyServices-container_item-text__home-page {
+  font-size: 2rem;
 }

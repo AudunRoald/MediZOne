@@ -1,6 +1,6 @@
 import Header from "../../components/layout/header/Header";
 import FlexibleScopeRepairImage from "../../assets/flexible_scope_repair.png";
-import Styles from "./repairs.module.css";
+
 import RepairInfo from "./components/RepairInfo";
 
 const FlexibleScopeRepair = () => {

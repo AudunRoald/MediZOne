@@ -1,33 +1,27 @@
 import Button from "../../../components/buttons/Button";
 import "../../../css/hero.css";
-import medicalBanner from "../../../assets/medical-banner-with-doctor-wearing-face-mask.jpg";
+import smiling_doctor_analyzing_knee from "../../../assets/smiling_doctor_analyzing_knee.jpg";
 
 const HomeHero = () => {
   return (
-    <section className="hero-wrapper hero-wrapper_home-page">
-      <div className="hero-content_wrapper__home-page">
-        <div className="hero-titles_wrapper">
-          <h1 className="hero-titles_main-title">
-            Medical equipment & consumables
-          </h1>
-          <h2 className="hero-titles_second-title">
-            Your satisfaction is our motivation
-          </h2>
-        </div>
-        <Button
-          buttonText="view our products"
-          buttonClassName="button button_call-to-action"
-          to="/products"
-        />
-      </div>
-      {/* <img
-        src={medicalBanner}
+    <section className="hero-wrapper_home-page">
+      <h1 className="hero-titles_main-title">
+        Expert Medical Equipment Repairs & Wholesale Medical Supplies
+      </h1>
+      <h2 className="hero-titles_second-title">
+        Trusted Solutions for Healthcare Providers
+      </h2>
+      <Button
+        buttonText="Schedule Your Repair Now!"
+        buttonGridArea="home-page_call-to-action"
+        buttonClassName="button button_call-to-action button_call-to-action_homePage"
+        to="/products"
+      />
+      <img
+        src={smiling_doctor_analyzing_knee}
+        className="home-page_hero_image"
         alt=""
-        className="hero-backgroundImage_home-page"
-        rel="preload"
-        loading="eager"
-        fetchpriority="high"
-      /> */}
+      />
     </section>
   );
 };

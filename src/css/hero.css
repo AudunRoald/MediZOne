@@ -1,11 +1,23 @@
 .hero-titles_main-title {
-  font-size: clamp(30px, 8vw, 87px);
-  width: max(16ch);
+  font-size: clamp(1rem, 8vw, 4.5rem);
+  width: max(27ch);
+  /* background-color: blueviolet; */
+  grid-area: mainTitle;
+  line-height: 1.3em;
+  margin-left: 6rem;
+  color: var(--primary);
+  margin-block: auto;
 }
 
 .hero-titles_second-title {
-  font-size: clamp(15px, 8vw, 60px);
-  width: max(14ch);
+  font-size: clamp(1rem, 8vw, 3rem);
+  width: max(33ch);
+  /* background-color: pink; */
+  grid-area: secondTitle;
+  font-style: italic;
+  color: var(--gray_dark);
+  margin-left: 6rem;
+  margin-block: auto;
 }
 
 .hero-titles_wrapper {
@@ -14,7 +26,27 @@
   gap: 3rem;
   width: max(90%);
   padding-left: 10em;
+  margin-inline: auto;
+  padding-top: 8rem;
+
   /* background-color: var(--secondary); */
+}
+
+.hero-titles_wrapper::after {
+  content: "";
+  /* background: linear-gradient(
+    to bottom,
+    var(--primary),
+    80%,
+    var(--primaryTransparent)
+  ); */
+  width: max(100%);
+  height: max(100%);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .hero-wrapper {
@@ -24,33 +56,35 @@
   /* background-color: chartreuse; */
 }
 
-.hero-backgroundImage_home-page {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-
-  width: inherit;
+.home-page_hero_image {
+  grid-area: homeHeroImage;
+  height: max(100%);
+  width: max(100%);
+  object-fit: contain;
+  justify-self: end;
+  margin-inline: auto;
+  transform: scaleX(-1);
 }
 
 .hero-wrapper_home-page {
-  background-image: url("../assets/medical-banner-with-doctor-wearing-face-mask.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: max(90vh);
-  isolation: isolate;
-  position: relative;
-  overflow: hidden;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    ".                    homeHeroImage"
+    "mainTitle            homeHeroImage"
+    "secondTitle          homeHeroImage"
+    "ctaButton            homeHeroImage"
+    ".                    homeHeroImage";
+  gap: 1.5rem;
+  height: max(92vh);
+  width: max(100%);
+  display: grid;
+  background: linear-gradient(to bottom, var(--secondary), 80%, var(--primary));
 }
 
 .hero-content_wrapper__home-page::after {
   content: "";
-  background: linear-gradient(
-    to right,
-    var(--primary),
-    70%,
-    var(--primaryTransparent)
-  );
+  background: linear-gradient(to top, var(--primary), 10%, transparent);
   width: max(100%);
   height: max(100%);
   display: block;
@@ -66,14 +100,12 @@
 
 .hero-content_wrapper__home-page {
   align-items: center;
-  display: flex;
+
   flex-direction: column;
+  margin: auto;
   height: max(100%);
-  justify-content: space-around;
-  margin-left: 10rem;
-  width: max(50%);
-  padding-block: 6em;
-  /* background-color: chartreuse; */
+  width: max(90vw); /* 
+  background-color: chartreuse; */
 }
 
 .hero-content_wrapper__about-page {

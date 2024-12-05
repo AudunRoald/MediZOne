@@ -18,3 +18,17 @@
 .contact-us_hero-image {
   width: max(60%);
 }
+
+.home-hero_image {
+  height: max(100%);
+}
+
+.repair-info_icon {
+  font-size: 3rem;
+  color: var(--primary);
+}
+
+.repair-page_title-image {
+  max-width: 40%;
+  border-radius: 0.7rem;
+}
